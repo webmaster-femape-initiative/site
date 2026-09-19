@@ -1,2 +1,14 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script lang="ts">
+	import Actions from '$lib/components/Actions.svelte';
+	import AfricaActions from '$lib/components/AfricaActions.svelte';
+	import Hero from '$lib/components/hero.svelte';
+	import LatestNews from '$lib/components/LatestNews.svelte';
+	import type { PageProps } from './$types';
+
+	let { data }: PageProps = $props();
+</script>
+
+<Hero />
+<Actions />
+<AfricaActions />
+<LatestNews newsList={data.newsList} />

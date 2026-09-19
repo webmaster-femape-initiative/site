@@ -29,7 +29,23 @@ export default defineConfig({
 		paraglideVitePlugin({
 			project: './project.inlang',
 			outdir: './src/lib/paraglide',
-			strategy: ["url", "preferredLanguage", "baseLocale"],
+			strategy: ['url', 'preferredLanguage', 'baseLocale'],
+			urlPatterns: [
+				{
+					pattern: '/',
+					localized: [
+						['en', '/en'],
+						['fr', '/fr']
+					]
+				},
+				{
+					pattern: '/:path(.*)?',
+					localized: [
+						['en', '/en/:path(.*)?'],
+						['fr', '/fr/:path(.*)?']
+					]
+				}
+			],
 			emitTsDeclarations: true
 		})
 	]

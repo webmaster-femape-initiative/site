@@ -1,3 +1,96 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
+
+@plugin 'daisyui' {
+	themes: femape --default;
+}
+
+/* =========================================================
+   TAILWIND
+   ========================================================= */
+
+@theme {
+	/* Polices */
+	--font-sans: 'Poppins', sans-serif;
+	--font-handwriting: 'Caveat', cursive;
+
+	/* Couleurs FEMAPE */
+	--color-primary: #055097;
+	--color-secondary: #e1212d;
+
+	/* Breakpoints */
+	--breakpoint-3xl: 200rem;
+}
+
+/* =========================================================
+   DAISYUI - THÈME FEMAPE
+   ========================================================= */
+
+@plugin 'daisyui/theme' {
+	name: 'femape';
+	default: true;
+	prefersdark: false;
+	color-scheme: light;
+
+	/* Couleurs principales */
+	--color-primary: #055097;
+	--color-primary-content: #ffffff;
+
+	--color-secondary: #e1212d;
+	--color-secondary-content: #ffffff;
+
+	/* Accent */
+	--color-accent: #055097;
+	--color-accent-content: #ffffff;
+
+	/* Neutres */
+	--color-neutral: #243447;
+	--color-neutral-content: #ffffff;
+
+	/* Fonds */
+	--color-base-100: #ffffff;
+	--color-base-200: #f7f9fb;
+	--color-base-300: #edf1f5;
+	--color-base-content: #055097;
+
+	/* États */
+	--color-info: #055097;
+	--color-info-content: #ffffff;
+
+	--color-success: #2e7d32;
+	--color-success-content: #ffffff;
+
+	--color-warning: #f59e0b;
+	--color-warning-content: #1f2937;
+
+	--color-error: #e1212d;
+	--color-error-content: #ffffff;
+
+	/* Formes DaisyUI */
+	--radius-selector: 0.5rem;
+	--radius-field: 0.5rem;
+	--radius-box: 1rem;
+
+	--size-selector: 0.25rem;
+	--size-field: 0.25rem;
+
+	--border: 1px;
+
+	--depth: 1;
+	--noise: 0;
+}
+
+/* =========================================================
+   BASE DU SITE
+   ========================================================= */
+
+@layer base {
+	html {
+		color-scheme: light;
+	}
+
+	body {
+		@apply bg-base-100 font-sans text-base-content;
+	}
+}

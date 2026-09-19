@@ -1,4 +1,33 @@
 {
 	"$schema": "https://inlang.com/schema/inlang-message-format",
-	"hello_world": "Hello, {name} from fr!"
+	"hello_world": "Hello, {name} from fr!",
+	"our_mission": "Notre mission",
+	"home": "Accueil",
+	"freanch_flag": "Drapeau français",
+	"english_flag": "Drapeau anglais",
+	"solidarity": "Solidaires",
+	"here": "ici",
+	"commited": "engagés",
+	"elsewhere": "ailleurs",
+	"subslogan": "Au plus près des plus vulnérables",
+  	"actions_title": "Nos actions en Île-de-France",
+  	"actions_subtitle": "Accompagner aujourd'hui pour construire demain",
+  	"actions_intro": "En Île-de-France, nous agissons chaque jour auprès des personnes en situation de précarité à travers des solutions concrètes et durables.",
+
+  	"actions_assistance_title": "Assistance aux personnes vulnérables",
+  	"actions_assistance_description": "Nous apportons une aide immédiate et adaptée aux personnes en situation de précarité : accès aux biens de première nécessité, soutien social et orientation vers les services compétents.",
+
+  	"actions_reintegration_title": "Programmes de réinsertion",
+  	"actions_reintegration_description": "Nous accompagnons les personnes dans leur parcours de réinsertion sociale et professionnelle, à travers des formations, un soutien personnalisé et la mobilisation d’un réseau de partenaires.",
+
+  	"actions_homeless_title": "Soutien aux sans-abris",
+  	"actions_homeless_description": "Nous agissons sur le terrain pour offrir un accompagnement humain et matériel aux personnes sans abri : maraudes, hébergement d’urgence et suivi vers des solutions durables.",
+
+  	"africa_actions_title": "Nos délégations en Afrique",
+  	"africa_actions_description": "Nos délégations mènent également des missions de lutte contre les pathologies infectieuses en Afrique, aux côtés des populations locales.",
+  	"africa_actions_info": "Cette section sera prochainement enrichie avec davantage d’informations sur nos actions et nos projets en Afrique.",
+
+	"latestNews_title": "Dernières actualités",
+    "latestNews_viewAll": "Voir toutes les actualités",
+    "latestNews_readMore": "Lire la suite"
 }

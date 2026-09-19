@@ -1,4 +1,33 @@
 {
 	"$schema": "https://inlang.com/schema/inlang-message-format",
-	"hello_world": "Hello, {name} from en!"
+	"hello_world": "Hello, {name} from en!",
+	"home": "Home",
+	"our_mission": "Our mission",
+	"french_flag": "French flag",
+	"english_flag": "Union jack",
+	"solidarity": "Solidarity",
+	"here": "here",
+	"commited": "commited",
+	"elsewhere": "elsewhere",
+	"subslogan": "Supporting the most vulnerables",
+  	"actions_title": "Our work in the Paris Region",
+  	"actions_subtitle": "Supporting people today to build a better tomorrow",
+  	"actions_intro": "In the Paris Region, we work every day alongside people facing hardship, providing practical and sustainable solutions.",
+
+ 	"actions_assistance_title": "Support for vulnerable people",
+  	"actions_assistance_description": "We provide immediate, tailored assistance to people facing hardship, including access to essential goods, social support and guidance towards appropriate services.",
+
+  	"actions_reintegration_title": "Social and professional reintegration",
+  	"actions_reintegration_description": "We support people throughout their social and professional reintegration journey through training, personalised assistance and a network of partners.",
+
+  	"actions_homeless_title": "Support for homeless people",
+  	"actions_homeless_description": "We work directly in the field to provide practical and compassionate support to homeless people through outreach, emergency accommodation and guidance towards sustainable solutions.",
+
+  	"africa_actions_title": "Our work in Africa",
+  	"africa_actions_description": "Our delegations also carry out initiatives to combat infectious diseases in West Africa, working alongside local communities.",
+  	"africa_actions_info": "This section will soon be expanded with more information about our work and projects in Africa.",
+
+	"latestNews_title": "Latest news",
+    "latestNews_viewAll": "View all news",
+    "latestNews_readMore": "Read more"
 }

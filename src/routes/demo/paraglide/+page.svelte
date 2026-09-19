@@ -4,6 +4,7 @@
 </script>
 
 <h1>{m.hello_world({ name: 'SvelteKit User' })}</h1>
+{m.our_mission()}
 
 <div>
 	<button onclick={() => setLocale('en')}>en</button>
