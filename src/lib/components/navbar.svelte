@@ -33,7 +33,7 @@
 			>
 				<li><a class="text-lg" href={localizeHref('/')}>{m.home()}</a></li>
 				<li>
-					<a class="text-lg" href={localizeHref('/mission')}>{m.our_mission()}</a>
+					<a class="text-lg" href={localizeHref('/about')}>{m.about()}</a>
 				</li>
 			</ul>
 		</div>
@@ -42,7 +42,7 @@
 	<div class="navbar-center hidden lg:flex">
 		<ul class="menu menu-horizontal px-1">
 			<li><a class="text-lg" href={localizeHref('/')}>{m.home()}</a></li>
-			<li><a class="text-lg" href={localizeHref('/mission')}>{m.our_mission()}</a></li>
+			<li><a class="text-lg" href={localizeHref('/about')}>{m.about()}</a></li>
 		</ul>
 	</div>
 	<div class="navbar-end">

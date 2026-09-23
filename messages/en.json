@@ -2,7 +2,7 @@
 	"$schema": "https://inlang.com/schema/inlang-message-format",
 	"hello_world": "Hello, {name} from en!",
 	"home": "Home",
-	"our_mission": "Our mission",
+	"about": "About",
 	"french_flag": "French flag",
 	"english_flag": "Union jack",
 	"solidarity": "Solidarity",
@@ -29,5 +29,90 @@
 
 	"latestNews_title": "Latest news",
     "latestNews_viewAll": "View all news",
-    "latestNews_readMore": "Read more"
+    "latestNews_readMore": "Read more",
+
+	"about_breadcrumb_home": "Home",
+	"about_breadcrumb_about": "About",
+
+	"about_title": "About FEMAPE-Initiative",
+	"about_subtitle": "Beyond aid: a mission of heart and hope",
+
+	"about_intro_1": "We believe that every person deserves to be respected, listened to and supported, whatever their circumstances. Our mission combines material assistance, moral support and human connection.",
+
+	"about_intro_2": "By considering each person as a whole, we help them rediscover the resources, opportunities and confidence they need to move forward.",
+
+	"about_value_dignity_title": "Dignity",
+	"about_value_dignity_description": "Because every person matters.",
+
+	"about_value_listening_title": "Listening",
+	"about_value_listening_description": "To understand and act appropriately.",
+
+	"about_value_autonomy_title": "Independence",
+	"about_value_autonomy_description": "To help everyone rebuild their lives.",
+
+	"about_history_eyebrow": "Our story",
+
+	"about_history_title": "Solidarity that reaches beyond borders",
+
+	"about_history_summary": "Born from a desire to act against inequality and social exclusion, FEMAPE Initiative supports people who need it most. From France to Burkina Faso, our work has gradually grown around one shared conviction: putting people at the heart of solidarity.",
+
+	"about_history_paragraph_1": "FEMAPE Initiative was born at a time when the urgency to act could be felt on every street corner and in every encounter. Founded with the determination to address growing inequality and social exclusion, our organization quickly evolved into a force for change and hope. Every stage of our development has been guided by one mission: to be there where needs are greatest, without ever losing sight of our shared humanity.",
+
+	"about_history_paragraph_2": "The expansion of our work beyond France, particularly with the opening of a branch in Burkina Faso, reflects our commitment to providing assistance wherever it is needed, regardless of borders or nationality. This step marked the beginning of our international presence and reflects our vision of solidarity without limits, capable of transcending cultural and geographical barriers to reach every life with the same dedication.",
+
+	"about_history_expand": "Read our story",
+	"about_history_collapse": "Show less",
+
+	"about_history_image_alt": "A FEMAPE Initiative volunteer interacting with a child during a community support initiative",
+
+	"about_approach_eyebrow": "Our approach",
+	"about_approach_title": "Understand, act together, support",
+
+	"about_approach_understand_title": "Understand people's needs",
+	"about_approach_understand_description": "Every situation is unique. We take the time to listen and understand so that we can provide an appropriate response.",
+
+	"about_approach_together_title": "Build together",
+	"about_approach_together_description": "We work with local organizations, institutions and people on the ground to combine our skills and expertise.",
+
+	"about_approach_autonomy_title": "Foster independence",
+	"about_approach_autonomy_description": "We adapt our actions to help everyone regain their place in society and build lasting independence.",
+
+	"about_solidarity_title": "Join our movement of solidarity",
+	"about_solidarity_subtitle": "Every gesture matters.",
+	"about_solidarity_description": "A donation, your time or simply sharing our cause: every commitment helps build a fairer and more inclusive world.",
+	"about_solidarity_donate": "Donate",
+	"about_solidarity_image_alt": "A FEMAPE Initiative volunteer talking with someone receiving support",
+
+	"engagement_title": "What if we took action together?",
+
+	"engagement_description": "Would you like to get involved, propose a partnership or learn more? Contact us to discuss how we can work together.",
+
+	"engagement_form_title": "I would like to get involved",
+
+	"engagement_name_label": "Name",
+	"engagement_name_placeholder": "Your name",
+
+	"engagement_email_label": "Email address",
+	"engagement_email_placeholder": "your@email.com",
+
+	"engagement_subject_label": "I would like to…",
+	"engagement_subject_volunteer": "Become a volunteer",
+	"engagement_subject_partnership": "Propose a partnership",
+	"engagement_subject_information": "Request information",
+	"engagement_subject_other": "Other request",
+
+	"engagement_message_label": "Your message",
+	"engagement_message_placeholder": "Your message…",
+
+	"engagement_consent": "I agree that my data may be used to respond to my request.",
+
+	"engagement_submit": "Send my message",
+	"engagement_sending": "Sending…",
+
+	"engagement_error_name_too_short": "Your name must contain at least 2 characters.",
+	"engagement_error_name_too_long": "Your name cannot exceed 100 characters.",
+	"engagement_error_email_invalid": "Please enter a valid email address.",
+	"engagement_error_message_too_short": "Your message must contain at least 10 characters.",
+	"engagement_error_message_too_long": "Your message cannot exceed 2,000 characters.",
+	"engagement_error_consent_required": "You must agree to the use of your data before submitting your request."
 }

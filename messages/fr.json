@@ -1,7 +1,7 @@
 {
 	"$schema": "https://inlang.com/schema/inlang-message-format",
 	"hello_world": "Hello, {name} from fr!",
-	"our_mission": "Notre mission",
+	"about": "À propos",
 	"home": "Accueil",
 	"freanch_flag": "Drapeau français",
 	"english_flag": "Drapeau anglais",
@@ -29,5 +29,127 @@
 
 	"latestNews_title": "Dernières actualités",
     "latestNews_viewAll": "Voir toutes les actualités",
-    "latestNews_readMore": "Lire la suite"
+    "latestNews_readMore": "Lire la suite",
+
+	"about_breadcrumb_home": "Accueil",
+	"about_breadcrumb_about": "À propos",
+
+	"about_title": "À propos de FEMAPE-Initiative",
+	"about_subtitle": "Au-delà de l’aide : une mission de cœur et d’espoir",
+
+	"about_intro_1": "Nous croyons que chaque personne mérite d’être respectée, écoutée et accompagnée, quelle que soit sa situation. Notre mission associe aide matérielle, soutien moral et lien humain.",
+
+	"about_intro_2": "En considérant chaque personne dans sa globalité, nous l’aidons à retrouver les ressources, les opportunités et la confiance nécessaires pour avancer.",
+
+	"about_value_dignity_title": "Dignité",
+	"about_value_dignity_description": "Parce que chaque personne compte.",
+
+	"about_value_listening_title": "Écoute",
+	"about_value_listening_description": "Pour comprendre et agir juste.",
+
+	"about_value_autonomy_title": "Autonomie",
+	"about_value_autonomy_description": "Pour permettre à chacun de se reconstruire.",
+	"about_history_eyebrow": "Notre histoire",
+
+	"about_history_title": "Une solidarité qui dépasse les frontières",
+
+	"about_history_summary": "Née d’une volonté d’agir face aux inégalités et à l’exclusion sociale, FEMAPE Initiative s’engage auprès des personnes qui en ont le plus besoin. De la France au Burkina Faso, notre action s’est progressivement développée autour d’une même conviction : placer l’humain au cœur de la solidarité.",
+
+	"about_history_paragraph_1": "FEMAPE Initiative a vu le jour dans un contexte où l'urgence d'agir se faisait sentir à chaque coin de rue, dans chaque regard croisé. Fondée par une volonté de faire face aux inégalités croissantes et à l'exclusion sociale, notre association a rapidement évolué pour devenir une force de changement et d'espoir. Chaque étape de notre développement a été guidée par une mission : répondre présent là où les besoins sont les plus criants, sans jamais perdre de vue notre humanité commune.",
+
+	"about_history_paragraph_2": "L'expansion de notre action au-delà des frontières françaises, notamment avec l'ouverture d'une antenne au Burkina Faso, illustre notre engagement à porter assistance là où elle est due, sans considération de frontières ou de nationalités. Cette étape marque notre entrée dans une dimension internationale, reflétant notre vision d'une solidarité sans limites, capable de transcender les barrières culturelles et géographiques pour toucher chaque vie avec la même intensité.",
+
+	"about_history_expand": "Lire notre histoire",
+	"about_history_collapse": "Réduire",
+
+	"about_history_image_alt": "Une bénévole de FEMAPE Initiative échange avec un enfant lors d’une action solidaire",
+
+	"about_approach_eyebrow": "Notre approche",
+	"about_approach_title": "Comprendre, agir ensemble, accompagner",
+
+	"about_approach_understand_title": "Comprendre les besoins",
+	"about_approach_understand_description": "Chaque situation est unique. Nous prenons le temps d’écouter et de comprendre pour proposer une réponse adaptée.",
+
+	"about_approach_together_title": "Construire ensemble",
+	"about_approach_together_description": "Nous travaillons avec les associations locales, les institutions et les acteurs de terrain pour unir nos compétences.",
+
+	"about_approach_autonomy_title": "Favoriser l’autonomie",
+	"about_approach_autonomy_description": "Nous adaptons nos actions pour aider chacun à retrouver sa place dans la société, dans la durée.",
+
+	"about_solidarity_title": "Participez à notre élan de solidarité",
+	"about_solidarity_subtitle": "Chaque geste compte.",
+	"about_solidarity_description": "Un don, du temps ou le partage de notre cause : chaque engagement contribue à un monde plus juste et inclusif.",
+	"about_solidarity_donate": "Faire un don",
+	"about_solidarity_image_alt": "Une bénévole de FEMAPE Initiative échange avec une personne accompagnée",
+
+	"engagement_title": "Et si nous agissions ensemble ?",
+
+	"engagement_description": "Vous souhaitez vous engager, proposer un partenariat ou en savoir plus ? Écrivez-nous pour échanger sur les possibilités de collaboration.",
+
+	"engagement_form_title": "Je souhaite m’engager",
+
+	"engagement_name_label": "Nom",
+	"engagement_name_placeholder": "Votre nom",
+
+	"engagement_email_label": "Adresse e-mail",
+	"engagement_email_placeholder": "votre@email.com",
+
+	"engagement_subject_label": "Je souhaite…",
+	"engagement_subject_volunteer": "Devenir bénévole",
+	"engagement_subject_partnership": "Proposer un partenariat",
+	"engagement_subject_information": "Obtenir des informations",
+	"engagement_subject_other": "Autre demande",
+
+	"engagement_message_label": "Votre message",
+	"engagement_message_placeholder": "Votre message…",
+
+	"engagement_consent": "J’accepte que mes données soient utilisées pour répondre à ma demande.",
+
+	"engagement_submit": "Envoyer mon message",
+	"engagement_sending": "Envoi en cours…",
+
+	"engagement_success": "Votre message a bien été envoyé.",
+
+	"engagement_error_name_too_short": "Le nom doit contenir au moins 2 caractères.",
+	"engagement_error_name_too_long": "Le nom ne peut pas dépasser 100 caractères.",
+	"engagement_error_email_invalid": "Veuillez saisir une adresse e-mail valide.",
+	"engagement_error_message_too_short": "Le message doit contenir au moins 10 caractères.",
+	"engagement_error_message_too_long": "Le message ne peut pas dépasser 2 000 caractères.",
+	"engagement_error_consent_required": "Vous devez accepter l’utilisation de vos données pour envoyer votre demande.",
+
+	"programs_hero_eyebrow": "NOS PROGRAMMES",
+	"programs_hero_title": "Découvrez Nos Services",
+	"programs_hero_subtitle": "Un engagement vers l’amélioration de la vie",
+
+	"programs_hero_intro": "Chez FEMAPE-I, nous proposons une gamme complète de services destinés à répondre aux besoins des personnes vulnérables.",
+
+	"programs_hero_goal": "Notre objectif est de fournir un soutien pratique, psychologique et social à ceux qui en ont le plus besoin, en mettant l’accent sur la dignité et l’autonomie.",
+
+	"programs_hero_daily_help": "Aide quotidienne et accompagnement personnalisé",
+
+	"programs_hero_reintegration": "Programmes de réinsertion sociale et professionnelle",
+
+	"programs_hero_psychological_support": "Soutien psychologique et émotionnel",
+
+	"programs_hero_slogan": "Plus solidaires pour un avenir meilleur",
+
+	"programs_hero_image_alt": "Une intervenante accompagne une personne vulnérable",
+
+	"programs_hero_eyebrow": "OUR PROGRAMMES",
+	"programs_hero_title": "Discover Our Services",
+	"programs_hero_subtitle": "A commitment to improving lives",
+
+	"programs_hero_intro": "At FEMAPE-I, we offer a comprehensive range of services designed to meet the needs of vulnerable people.",
+
+	"programs_hero_goal": "Our goal is to provide practical, psychological and social support to those who need it most, with a strong focus on dignity and independence.",
+
+	"programs_hero_daily_help": "Daily assistance and personalised support",
+
+	"programs_hero_reintegration": "Social and professional reintegration programmes",
+
+	"programs_hero_psychological_support": "Psychological and emotional support",
+
+	"programs_hero_slogan": "Together for a better future",
+
+	"programs_hero_image_alt": "A support worker assisting a vulnerable person"
 }

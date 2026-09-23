@@ -1,12 +1,10 @@
 <script lang="ts">
-	import ActionCollapse from '$lib/components/ActionCollapse.svelte';
-	import ActionCard from '$lib/components/ActionCard.svelte';
-
 	import assistanceImg from '$lib/assets/assistance.png';
 	import reinsertionImg from '$lib/assets/reinsertion.png';
 	import sansAbriImg from '$lib/assets/aide-sans-abris.png';
 	import * as m from '$lib/paraglide/messages.js';
 	import { House, Sprout, Users } from '@lucide/svelte';
+	import ResponsiveActionCard from './ResponsiveActionCard.svelte';
 
 	const actions = [
 		{
@@ -60,47 +58,28 @@
 			</p>
 		</header>
 
-		<!-- =====================================================
-         MOBILE : COLLAPSE DAISYUI
-         ===================================================== -->
-
-		<div class="flex flex-col gap-3 md:hidden">
-			{#each actions as action (action.title)}
+		<div
+			class="
+				grid grid-cols-1 gap-3
+				md:grid-cols-3 md:gap-5
+				lg:gap-8
+			"
+		>
+			{#each actions as action (action.icon)}
 				{@const Icon = action.icon}
-
-				{#snippet actionIcon()}
-					<span
-						class="flex size-11 shrink-0 items-center justify-center rounded-full text-white {action.iconClass}"
-					>
-						<Icon size={22} strokeWidth={2.2} />
-					</span>
-				{/snippet}
-				<ActionCollapse title={action.title} description={action.description} icon={actionIcon} />
-			{/each}
-		</div>
-
-		<!-- =====================================================
-         TABLETTE / DESKTOP : CARDS DAISYUI
-         ===================================================== -->
-
-		<div class="hidden grid-cols-3 gap-4 md:grid lg:gap-6">
-			{#each actions as action (action.title)}
-				{@const Icon = action.icon}
-
-				{#snippet actionIcon()}
-					<span
-						class="flex size-11 shrink-0 items-center justify-center rounded-full text-white {action.iconClass} 2xl:size-14 3xl:size-16"
-					>
-						<Icon class="size-5.5 2xl:size-7 3xl:size-10" strokeWidth={2.2} />
-					</span>
-				{/snippet}
-
-				<ActionCard
+				<ResponsiveActionCard
 					title={action.title}
 					description={action.description}
 					image={action.image}
-					icon={actionIcon}
-				/>
+				>
+					{#snippet icon()}
+						<span
+							class="flex size-11 shrink-0 items-center justify-center rounded-full text-white {action.iconClass}"
+						>
+							<Icon size={22} strokeWidth={2.2} />
+						</span>
+					{/snippet}
+				</ResponsiveActionCard>
 			{/each}
 		</div>
 	</div>
