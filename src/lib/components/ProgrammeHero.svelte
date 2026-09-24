@@ -1,42 +1,42 @@
 <script lang="ts">
-	import { UsersRound, Ear, Sprout } from '@lucide/svelte';
+	import { HandHeart, Ear, Sprout } from '@lucide/svelte';
 
 	import HeroImage from '$lib/components/HeroImage.svelte';
 
-	import heroImage from '$lib/assets/about-hero.png';
+	import heroImage from '$lib/assets/program-hero.png';
 
 	import * as m from '$lib/paraglide/messages';
 
-	const values = [
+	const commitments = [
 		{
-			title: m.about_hero_dignity_title(),
-			description: m.about_hero_dignity_description(),
-			icon: UsersRound,
+			title: m.programs_hero_support_title(),
+			description: m.programs_hero_support_description(),
+			icon: HandHeart,
 			bgClass: 'bg-primary'
 		},
 		{
-			title: m.about_hero_listening_title(),
-			description: m.about_hero_listening_description(),
+			title: m.programs_hero_listen_title(),
+			description: m.programs_hero_listen_description(),
 			icon: Ear,
 			bgClass: 'bg-secondary'
 		},
 		{
-			title: m.about_hero_autonomy_title(),
-			description: m.about_hero_autonomy_description(),
+			title: m.programs_hero_rebuild_title(),
+			description: m.programs_hero_rebuild_description(),
 			icon: Sprout,
 			bgClass: 'bg-sky-500'
 		}
 	];
 </script>
 
-<section class="relative w-full overflow-hidden bg-base-100" aria-labelledby="about-hero-title">
+<section class="relative w-full overflow-hidden bg-base-100" aria-labelledby="programs-hero-title">
 	<div class="mx-auto">
 		<div class="grid md:grid-cols-2">
 			<!-- =====================================================
 			     IMAGE
 			     ===================================================== -->
 
-			<HeroImage image={heroImage} imageAlt={m.about_hero_image_alt()} />
+			<HeroImage image={heroImage} imageAlt={m.programs_hero_image_alt()} />
 
 			<!-- =====================================================
 			     CONTENU
@@ -78,14 +78,15 @@
 							sm:text-sm
 						"
 					>
-						{m.about_hero_eyebrow()}
+						{m.programs_hero_eyebrow()}
 					</p>
 
 					<!-- Titre -->
 
 					<h1
-						id="about-hero-title"
+						id="programs-hero-title"
 						class="
+						
 							text-3xl
 							leading-[1.05]
 							font-bold
@@ -98,7 +99,7 @@
 							2xl:text-6xl
 						"
 					>
-						{m.about_hero_title()}
+						{m.programs_hero_title()}
 					</h1>
 
 					<!-- Sous-titre -->
@@ -106,20 +107,19 @@
 					<h2
 						class="
 							mt-2
-						
+
 							text-xl
 							leading-tight
-							font-medium
 							text-sky-500
 
 							sm:text-2xl
 							lg:text-3xl
 						"
 					>
-						{m.about_hero_subtitle()}
+						{m.programs_hero_subtitle()}
 					</h2>
 
-					<!-- Description -->
+					<!-- Introduction -->
 
 					<div
 						class="
@@ -135,93 +135,92 @@
 						"
 					>
 						<p>
-							{m.about_hero_description_1()}
+							{m.programs_hero_intro()}
 						</p>
 
 						<p>
-							{m.about_hero_description_2()}
+							{m.programs_hero_goal()}
 						</p>
 					</div>
 
 					<!-- =================================================
-					     VALEURS
+					     ENGAGEMENTS
 					     ================================================= -->
 
 					<div
 						class="
-							mt-7
+		mt-7
+		grid grid-cols-1 gap-4
 
-							grid grid-cols-1
-							gap-4
+		sm:grid-cols-3
+		sm:gap-3
 
-							sm:grid-cols-3
-							sm:gap-3
-
-							lg:mt-9
-							lg:gap-5
-						"
+		lg:mt-9
+		lg:gap-5
+	"
 					>
-						{#each values as value (value.icon)}
+						{#each commitments as commitment (commitment.icon)}
 							<div
 								class="
-			flex items-center gap-3
+				flex items-center gap-3
 
-			sm:flex-col
-			sm:items-start
-			sm:gap-2
+				sm:flex-col
+				sm:items-start
+				sm:gap-2
 
-			lg:flex-row
-			lg:items-start
-			lg:gap-3
-		"
+				lg:flex-row
+				lg:items-start
+				lg:gap-3
+			"
 							>
 								<div
 									class="
-				{value.bgClass}
+					{commitment.bgClass}
 
-				flex
-				size-11
-				shrink-0
-				items-center
-				justify-center
+					flex
+					size-11
+					shrink-0
+					items-center
+					justify-center
 
-				rounded-full
-				text-white
-				shadow-sm
+					rounded-full
+					text-white
+					shadow-sm
 
-				lg:size-12
-			"
+					lg:size-12
+				"
 								>
-									<value.icon size={23} strokeWidth={2} aria-hidden="true" />
+									<commitment.icon size={23} strokeWidth={2} aria-hidden="true" />
 								</div>
 
 								<div class="min-w-0">
 									<h3
 										class="
-					text-sm
-					leading-tight
-					font-bold
-					text-primary
+						text-sm
+						leading-tight
+						font-bold
+						text-primary
 
-					sm:text-xs
-					lg:text-sm
-				"
+						sm:text-xs
+						lg:text-sm
+					"
 									>
-										{value.title}
+										{commitment.title}
 									</h3>
 
 									<p
 										class="
-					mt-1
+						mt-1
+						max-w-[180px]
 
-					text-xs
-					leading-snug
-					text-primary/70
+						text-xs
+						leading-snug
+						text-primary/70
 
-					lg:text-sm
-				"
+						lg:text-sm
+					"
 									>
-										{value.description}
+										{commitment.description}
 									</p>
 								</div>
 							</div>

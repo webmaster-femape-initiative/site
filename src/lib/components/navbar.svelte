@@ -29,11 +29,14 @@
 			</div>
 			<ul
 				tabindex="-1"
-				class="menu dropdown-content z-1 mt-3 w-52 menu-sm rounded-box bg-base-100 p-2 shadow"
+				class="menu dropdown-content z-30 mt-3 w-52 menu-sm rounded-box bg-base-100 p-2 shadow"
 			>
 				<li><a class="text-lg" href={localizeHref('/')}>{m.home()}</a></li>
 				<li>
 					<a class="text-lg" href={localizeHref('/about')}>{m.about()}</a>
+				</li>
+				<li>
+					<a class="text-lg" href={localizeHref('/programs')}>{m.programs()}</a>
 				</li>
 			</ul>
 		</div>
@@ -43,6 +46,7 @@
 		<ul class="menu menu-horizontal px-1">
 			<li><a class="text-lg" href={localizeHref('/')}>{m.home()}</a></li>
 			<li><a class="text-lg" href={localizeHref('/about')}>{m.about()}</a></li>
+			<li><a class="text-lg" href={localizeHref('/programs')}>{m.programs()}</a></li>
 		</ul>
 	</div>
 	<div class="navbar-end">

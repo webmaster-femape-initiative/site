@@ -3,6 +3,7 @@
 	"hello_world": "Hello, {name} from fr!",
 	"about": "À propos",
 	"home": "Accueil",
+	"programs": "Programmes",
 	"freanch_flag": "Drapeau français",
 	"english_flag": "Drapeau anglais",
 	"solidarity": "Solidaires",
@@ -31,25 +32,26 @@
     "latestNews_viewAll": "Voir toutes les actualités",
     "latestNews_readMore": "Lire la suite",
 
-	"about_breadcrumb_home": "Accueil",
-	"about_breadcrumb_about": "À propos",
+	"about_hero_eyebrow": "NOTRE MISSION",
+	"about_hero_title": "À propos de FEMAPE-I",
+	"about_hero_subtitle": "Au-delà de l’aide : une mission de cœur et d’espoir",
 
-	"about_title": "À propos de FEMAPE-Initiative",
-	"about_subtitle": "Au-delà de l’aide : une mission de cœur et d’espoir",
+	"about_hero_description_1": "Nous croyons que chaque personne mérite d’être respectée, écoutée et accompagnée, quelle que soit sa situation. Notre mission associe aide matérielle, soutien moral et lien humain.",
 
-	"about_intro_1": "Nous croyons que chaque personne mérite d’être respectée, écoutée et accompagnée, quelle que soit sa situation. Notre mission associe aide matérielle, soutien moral et lien humain.",
+	"about_hero_description_2": "En considérant chaque personne dans sa globalité, nous l’aidons à retrouver les ressources, les opportunités et la confiance nécessaires pour avancer.",
 
-	"about_intro_2": "En considérant chaque personne dans sa globalité, nous l’aidons à retrouver les ressources, les opportunités et la confiance nécessaires pour avancer.",
+	"about_hero_dignity_title": "Dignité",
+	"about_hero_dignity_description": "Parce que chaque personne compte.",
 
-	"about_value_dignity_title": "Dignité",
-	"about_value_dignity_description": "Parce que chaque personne compte.",
+	"about_hero_listening_title": "Écoute",
+	"about_hero_listening_description": "Pour comprendre et agir juste.",
 
-	"about_value_listening_title": "Écoute",
-	"about_value_listening_description": "Pour comprendre et agir juste.",
+	"about_hero_autonomy_title": "Autonomie",
+	"about_hero_autonomy_description": "Pour permettre à chacun de se reconstruire.",
 
-	"about_value_autonomy_title": "Autonomie",
-	"about_value_autonomy_description": "Pour permettre à chacun de se reconstruire.",
-	"about_history_eyebrow": "Notre histoire",
+	"about_hero_image_alt": "Deux personnes accompagnées par FEMAPE-I contemplent la ville",
+
+	"about_history_eyebrow": "NOTRE HISTOIRE",
 
 	"about_history_title": "Une solidarité qui dépasse les frontières",
 
@@ -125,31 +127,63 @@
 
 	"programs_hero_goal": "Notre objectif est de fournir un soutien pratique, psychologique et social à ceux qui en ont le plus besoin, en mettant l’accent sur la dignité et l’autonomie.",
 
-	"programs_hero_daily_help": "Aide quotidienne et accompagnement personnalisé",
+	"programs_hero_support_title": "Accompagner",
+	"programs_hero_support_description": "Être présent aux côtés des personnes les plus vulnérables.",
 
-	"programs_hero_reintegration": "Programmes de réinsertion sociale et professionnelle",
+	"programs_hero_listen_title": "Écouter",
+	"programs_hero_listen_description": "Créer un lien humain fondé sur l’attention et la bienveillance.",
 
-	"programs_hero_psychological_support": "Soutien psychologique et émotionnel",
+	"programs_hero_rebuild_title": "Reconstruire",
+	"programs_hero_rebuild_description": "Aider chacun à retrouver autonomie, confiance et perspectives.",
 
 	"programs_hero_slogan": "Plus solidaires pour un avenir meilleur",
 
 	"programs_hero_image_alt": "Une intervenante accompagne une personne vulnérable",
 
-	"programs_hero_eyebrow": "OUR PROGRAMMES",
-	"programs_hero_title": "Discover Our Services",
-	"programs_hero_subtitle": "A commitment to improving lives",
+	"programs_title": "Nos programmes",
 
-	"programs_hero_intro": "At FEMAPE-I, we offer a comprehensive range of services designed to meet the needs of vulnerable people.",
+	"programs_intro": "Découvrez nos différents programmes, conçus pour répondre aux besoins des personnes vulnérables et favoriser leur épanouissement. Chaque programme est pensé pour apporter un soutien concret et durable, en plaçant la dignité et l’autonomie au cœur de nos actions.",
 
-	"programs_hero_goal": "Our goal is to provide practical, psychological and social support to those who need it most, with a strong focus on dignity and independence.",
+	"programs_vulnerable_title": "Assistance aux personnes vulnérables",
+	"programs_vulnerable_summary": "Un accompagnement sur mesure pour les personnes âgées, handicapées ou en situation précaire.",
+	"programs_vulnerable_image_alt": "Une bénévole de FEMAPE Initiative offre une boisson chaude à une personne vulnérable.",
+	"programs_vulnerable_description": "Notre accompagnement s’adresse aux personnes qui se trouvent dans des situations de fragilité, qu’elles soient âgées, en situation de handicap ou confrontées à la précarité. Reconnaissant l’unicité de chaque parcours de vie, nous proposons une gamme étendue d’aides adaptées aux besoins de chacun. Cela inclut une assistance à domicile attentive, où nos équipes s’engagent à rendre le quotidien de nos bénéficiaires plus facile et plus agréable, notamment à travers les tâches ménagères, la préparation des repas ou la gestion des médicaments. L’accompagnement médical constitue également une part essentielle de notre action, en assurant le suivi des traitements, la coordination avec les professionnels de santé et l’organisation des rendez-vous médicaux. Au-delà de ces aspects, nous croyons fermement au pouvoir des liens sociaux et de l’engagement communautaire. Nos activités sociales visent ainsi à rompre l’isolement, à renforcer les réseaux de soutien et à favoriser l’épanouissement personnel à travers des ateliers, des sorties culturelles et des rencontres enrichissantes. Chez FEMAPE-I, notre objectif est de garantir que chaque personne reçoive l’attention, le respect et la bienveillance qu’elle mérite, afin de contribuer à une vie empreinte de dignité et de sérénité.",
+	"programs_vulnerable_detail_image_alt": "Une personne vulnérable reçoit un accompagnement attentif et bienveillant",
 
-	"programs_hero_daily_help": "Daily assistance and personalised support",
+	"programs_reintegration_title": "Programme de réinsertion sociale et professionnelle",
+	"programs_reintegration_summary": "Des formations et un accompagnement pour favoriser un retour durable vers l’emploi et la vie active.",
+	"programs_reintegration_image_alt": "Un homme accompagné par une conseillère dans le cadre d’un programme de réinsertion professionnelle",
+	"programs_reintegration_description": "Dans une société en constante évolution, les défis liés au chômage et à l’exclusion professionnelle nécessitent des réponses adaptées et efficaces. Les programmes de réinsertion de FEMAPE-I reposent sur une approche globale et personnalisée destinée à favoriser le retour à l’emploi et à la vie active des personnes marginalisées ou en quête de changement. Nos programmes s’appuient sur des formations professionnelles adaptées aux réalités du marché du travail et couvrant une variété de secteurs et de compétences. En parallèle, des ateliers de développement des compétences sociales et personnelles permettent de renforcer la confiance en soi, la capacité à communiquer efficacement et l’aptitude à travailler en équipe. L’accompagnement dans la recherche d’emploi constitue une dimension essentielle de nos programmes : préparation aux entretiens, élaboration de CV pertinents et mise en relation avec des employeurs potentiels. Notre objectif est d’ouvrir un chemin vers l’autonomie financière et sociale en donnant à chaque personne les outils nécessaires pour réaliser pleinement son potentiel et s’épanouir dans sa vie professionnelle et personnelle.",
+	"programs_reintegration_detail_image_alt": "Une personne bénéficie d’un accompagnement personnalisé pour préparer son retour à l’emploi",
 
-	"programs_hero_reintegration": "Social and professional reintegration programmes",
+	"programs_psychological_title": "Soutien psychologique et émotionnel",
+	"programs_psychological_summary": "Un espace d’écoute et de soutien pour surmonter les difficultés et retrouver la sérénité.",
+	"programs_psychological_image_alt": "Entretien individuel dans le cadre d’un soutien psychologique",
+	"programs_psychological_description": "Le bien-être mental est un pilier essentiel de la qualité de vie, mais il reste encore trop souvent négligé. Chez FEMAPE-I, nous accordons une attention particulière au soutien psychologique des personnes confrontées à des difficultés émotionnelles liées, par exemple, à des situations de vie stressantes, à la solitude ou à des expériences traumatisantes. Nos services offrent un espace sécurisé et bienveillant où chacun peut exprimer ses sentiments, ses inquiétudes et ses espoirs. À travers des consultations individuelles menées par des professionnels à l’écoute, nous cherchons à comprendre et à alléger les difficultés émotionnelles de nos bénéficiaires. Les groupes de parole offrent quant à eux un cadre collectif de soutien, favorisant le partage d’expériences et la création de liens entre des personnes traversant des situations similaires. L’accompagnement est personnalisé et adapté au rythme et aux besoins de chacun afin de favoriser le rétablissement de l’équilibre mental et émotionnel et d’aborder les défis de la vie de manière constructive. Notre ambition est d’aider chaque personne accompagnée par FEMAPE-I à retrouver la sérénité, la force intérieure et le bien-être nécessaires pour avancer.",
+	"programs_psychological_detail_image_alt": "Une professionnelle à l’écoute d’une personne lors d’une séance de soutien psychologique",
 
-	"programs_hero_psychological_support": "Psychological and emotional support",
+	
+	"programs_homeless_title": "Aide aux personnes sans-abri",
+	"programs_homeless_summary": "Une présence humaine, une écoute et une aide concrète pour accompagner les personnes vivant dans la rue.",
+	"programs_homeless_image_alt": "Des bénévoles apportent aide et réconfort à une personne sans-abri",
 
-	"programs_hero_slogan": "Together for a better future",
+	"programs_homeless_description_1": "Pour FEMAPE Initiative, le soutien aux personnes sans-abri est une priorité. Portée par des bénévoles dévoués, cette action nous permet d’aller à la rencontre de nos amis de la rue pour leur offrir une présence, un sourire, une écoute chaleureuse et une collation.",
 
-	"programs_hero_image_alt": "A support worker assisting a vulnerable person"
+	"programs_homeless_description_2": "Face au nombre croissant de personnes sans-abri, qu’il s’agisse de citoyens français ou de personnes migrantes, nous souhaitons avant tout maintenir un lien humain et une écoute attentive. En partenariat avec d’autres associations, nous les accompagnons également dans leurs démarches de réinsertion sociale. Nous leur proposons une alimentation saine à travers des collations variées, préparées notamment à partir d’invendus de boulangeries et grâce à notre Atelier Socio-culinaire, en lien avec l’épicerie solidaire.",
+
+	"programs_homeless_description_3": "Notre ambition est aussi de pouvoir accueillir les personnes que nous accompagnons dans un espace chaleureux, notamment les jours de pluie, autour de petits-déjeuners servis au sein de notre épicerie. L’Atelier Socio-culinaire, avec son café-snack solidaire et socio-culturel, joue ainsi un rôle essentiel en offrant à la fois un abri, un moment de convivialité et la chaleur humaine nécessaire dans les périodes difficiles.",
+
+	"programs_homeless_description_4": "Toutes ces actions sont rendues possibles grâce à l’engagement désintéressé de bénévoles passionnés, mais également grâce aux dons et aux adhésions de personnes qui choisissent de nous soutenir.",
+
+	"programs_homeless_thanks": "Merci à toutes et à tous pour votre soutien et votre générosité.",
+
+	"programs_homeless_detail_image_alt": "Des bénévoles de FEMAPE Initiative vont à la rencontre de personnes sans-abri",
+
+	"programs_discover": "Découvrir le programme",
+
+	"programs_donation_eyebrow": "SOUTENEZ NOS ACTIONS",
+	"programs_donation_title": "Faites un don aujourd’hui",
+	"programs_donation_description": "Votre générosité nous permet de poursuivre nos programmes et d’offrir un avenir meilleur aux personnes vulnérables.",
+	"programs_donation_cta": "Je fais un don",
+	"programs_donation_signature": "Chaque geste compte"
 }

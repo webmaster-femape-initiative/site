@@ -3,6 +3,7 @@
 	"hello_world": "Hello, {name} from en!",
 	"home": "Home",
 	"about": "About",
+	"programs": "Programs",
 	"french_flag": "French flag",
 	"english_flag": "Union jack",
 	"solidarity": "Solidarity",
@@ -31,26 +32,26 @@
     "latestNews_viewAll": "View all news",
     "latestNews_readMore": "Read more",
 
-	"about_breadcrumb_home": "Home",
-	"about_breadcrumb_about": "About",
+	"about_hero_eyebrow": "OUR MISSION",
+	"about_hero_title": "About FEMAPE-I",
+	"about_hero_subtitle": "Beyond assistance: a mission of compassion and hope",
 
-	"about_title": "About FEMAPE-Initiative",
-	"about_subtitle": "Beyond aid: a mission of heart and hope",
+	"about_hero_description_1": "We believe that every person deserves to be respected, listened to and supported, whatever their circumstances. Our mission combines practical assistance, emotional support and meaningful human connection.",
 
-	"about_intro_1": "We believe that every person deserves to be respected, listened to and supported, whatever their circumstances. Our mission combines material assistance, moral support and human connection.",
+	"about_hero_description_2": "By considering each person as a whole, we help them rediscover the resources, opportunities and confidence they need to move forward.",
 
-	"about_intro_2": "By considering each person as a whole, we help them rediscover the resources, opportunities and confidence they need to move forward.",
+	"about_hero_dignity_title": "Dignity",
+	"about_hero_dignity_description": "Because every person matters.",
 
-	"about_value_dignity_title": "Dignity",
-	"about_value_dignity_description": "Because every person matters.",
+	"about_hero_listening_title": "Listening",
+	"about_hero_listening_description": "To understand and respond appropriately.",
 
-	"about_value_listening_title": "Listening",
-	"about_value_listening_description": "To understand and act appropriately.",
+	"about_hero_autonomy_title": "Independence",
+	"about_hero_autonomy_description": "To help everyone rebuild their lives.",
 
-	"about_value_autonomy_title": "Independence",
-	"about_value_autonomy_description": "To help everyone rebuild their lives.",
+	"about_hero_image_alt": "Two people supported by FEMAPE-I looking out over the city",
 
-	"about_history_eyebrow": "Our story",
+	"about_history_eyebrow": "OUR STORY",
 
 	"about_history_title": "Solidarity that reaches beyond borders",
 
@@ -114,5 +115,74 @@
 	"engagement_error_email_invalid": "Please enter a valid email address.",
 	"engagement_error_message_too_short": "Your message must contain at least 10 characters.",
 	"engagement_error_message_too_long": "Your message cannot exceed 2,000 characters.",
-	"engagement_error_consent_required": "You must agree to the use of your data before submitting your request."
+	"engagement_error_consent_required": "You must agree to the use of your data before submitting your request.",
+
+	"programs_hero_eyebrow": "OUR PROGRAMMES",
+	"programs_hero_title": "Discover Our Services",
+	"programs_hero_subtitle": "A commitment to improving lives",
+
+	"programs_hero_intro": "At FEMAPE-I, we offer a comprehensive range of services designed to meet the needs of vulnerable people.",
+
+	"programs_hero_goal": "Our goal is to provide practical, psychological and social support to those who need it most, with a strong focus on dignity and independence.",
+
+	"programs_hero_support_title": "Support",
+	"programs_hero_support_description": "Standing alongside people facing the greatest vulnerability.",
+
+	"programs_hero_listen_title": "Listen",
+	"programs_hero_listen_description": "Building human connections through care and understanding.",
+
+	"programs_hero_rebuild_title": "Rebuild",
+	"programs_hero_rebuild_description": "Helping people regain independence, confidence and new perspectives.",
+
+	"programs_hero_slogan": "Together for a better future",
+
+	"programs_hero_image_alt": "A support worker assisting a vulnerable person",
+
+	"programs_title": "Our programmes",
+
+	"programs_intro": "Discover our programmes designed to meet the needs of vulnerable people and support their personal development. Each programme provides practical and lasting support, placing dignity and independence at the heart of our work.",
+
+	"programs_vulnerable_title": "Support for vulnerable people",
+	"programs_vulnerable_summary": "Personalised support for elderly people, people with disabilities and those facing difficult circumstances.",
+	"programs_vulnerable_image_alt": "A FEMAPE Initiative volunteer offers a hot drink to a vulnerable person.",
+	"programs_vulnerable_description": "Our support is designed for people facing vulnerable circumstances, whether they are elderly, living with a disability or experiencing hardship. Recognising that every life journey is unique, we provide a wide range of assistance tailored to individual needs. This includes attentive support at home, where our teams help make everyday life easier and more comfortable through household tasks, meal preparation and medication management. Medical support is also an essential part of our work, including treatment follow-up, coordination with healthcare professionals and the organisation of medical appointments. Beyond practical assistance, we strongly believe in the importance of social connections and community involvement. Our social activities aim to reduce isolation, strengthen support networks and encourage personal fulfilment through workshops, cultural outings and meaningful encounters. At FEMAPE-I, our goal is to ensure that every person receives the attention, respect and care they deserve, helping them live with dignity and peace of mind.",
+	"programs_vulnerable_detail_image_alt": "A vulnerable person receiving attentive and compassionate support",
+
+
+	"programs_reintegration_title": "Social and professional reintegration",
+	"programs_reintegration_summary": "Training and personalised support to help people make a sustainable return to employment and active life.",
+	"programs_reintegration_image_alt": "A man receiving guidance from an adviser as part of a professional reintegration programme",
+	"programs_reintegration_description": "In a constantly changing society, the challenges associated with unemployment and professional exclusion require appropriate and effective responses. FEMAPE-I’s reintegration programmes are based on a comprehensive and personalised approach designed to help people who are marginalised or seeking a new direction return to employment and active life. Our programmes include vocational training adapted to the realities of the labour market and covering a variety of sectors and skills. Alongside this, workshops focusing on social and personal development help participants build self-confidence, communicate effectively and strengthen their ability to work as part of a team. Support with job searching is an essential part of our programmes and includes interview preparation, the creation of effective CVs and connections with potential employers. Our goal is to provide a pathway towards financial and social independence by giving each person the tools they need to fulfil their potential and thrive in both their professional and personal lives.",
+	"programs_reintegration_detail_image_alt": "A person receiving personalised guidance to prepare for a return to employment",
+
+
+	"programs_psychological_title": "Psychological and emotional support",
+	"programs_psychological_summary": "A safe and supportive space to overcome difficulties and regain peace of mind.",
+	"programs_psychological_image_alt": "Individual psychological support session",
+	"programs_psychological_description": "Mental well-being is an essential part of quality of life, yet it is still too often overlooked. At FEMAPE-I, we place particular importance on supporting people facing emotional difficulties arising, for example, from stressful life circumstances, loneliness or traumatic experiences. Our services provide a safe and compassionate space where people can express their feelings, concerns and hopes. Through individual sessions led by attentive professionals, we seek to understand and ease the emotional difficulties experienced by those we support. Support groups provide a collective environment where participants can share experiences and build connections with others facing similar situations. Our support is personalised and adapted to each person’s pace and needs, helping them restore their mental and emotional balance and approach life’s challenges constructively. Our ambition is to help every person supported by FEMAPE-I regain the peace of mind, inner strength and well-being they need to move forward.",
+	"programs_psychological_detail_image_alt": "A professional listening attentively during a psychological support session",
+
+	"programs_homeless_title": "Support for homeless people",
+	"programs_homeless_summary": "Human connection, compassionate listening and practical assistance for people experiencing homelessness.",
+	"programs_homeless_image_alt": "Volunteers providing support and comfort to a person experiencing homelessness",
+
+	"programs_homeless_description_1": "At FEMAPE Initiative, supporting people experiencing homelessness is a priority. Led by dedicated volunteers, this work gives us the opportunity to meet people living on the streets and offer them a friendly presence, a smile, compassionate listening and something to eat.",
+
+	"programs_homeless_description_2": "Faced with the growing number of people experiencing homelessness, whether French citizens or migrants, our priority is to maintain human connection and provide a listening ear. Working alongside other organisations, we also support people on their path towards social reintegration. We provide healthy and varied food, prepared in part from unsold bakery products and through our Socio-Culinary Workshop in partnership with our solidarity grocery store.",
+
+	"programs_homeless_description_3": "We also aim to welcome the people we support into a warm and safe environment, particularly on rainy days, with breakfasts served at our grocery store. Our Socio-Culinary Workshop and its solidarity-based, socio-cultural café and snack area play an essential role by providing shelter, companionship and much-needed human warmth during difficult times.",
+
+	"programs_homeless_description_4": "All of this is made possible by the selfless commitment of passionate volunteers, as well as by donations and memberships from people who choose to support our work.",
+
+	"programs_homeless_thanks": "Thank you all for your support and generosity.",
+
+	"programs_homeless_detail_image_alt": "FEMAPE Initiative volunteers reaching out to people experiencing homelessness",
+
+	"programs_discover": "Discover the programme",
+
+	"programs_donation_eyebrow": "SUPPORT OUR WORK",
+	"programs_donation_title": "Make a donation today",
+	"programs_donation_description": "Your generosity helps us continue our programmes and build a better future for vulnerable people.",
+	"programs_donation_cta": "Make a donation",
+	"programs_donation_signature": "Every contribution matters"
 }
