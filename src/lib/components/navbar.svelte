@@ -38,6 +38,9 @@
 				<li>
 					<a class="text-lg" href={localizeHref('/programs')}>{m.programs()}</a>
 				</li>
+				<li>
+					<a class="text-lg" href={localizeHref('/news')}>{m.news()}</a>
+				</li>
 			</ul>
 		</div>
 		<a href={localizeHref('/')}><img src={logo} alt="logo FEMAPE initiative" /></a>
@@ -47,6 +50,7 @@
 			<li><a class="text-lg" href={localizeHref('/')}>{m.home()}</a></li>
 			<li><a class="text-lg" href={localizeHref('/about')}>{m.about()}</a></li>
 			<li><a class="text-lg" href={localizeHref('/programs')}>{m.programs()}</a></li>
+			<li><a class="text-lg" href={localizeHref('/news')}>{m.news()}</a></li>
 		</ul>
 	</div>
 	<div class="navbar-end">

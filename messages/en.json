@@ -4,6 +4,7 @@
 	"home": "Home",
 	"about": "About",
 	"programs": "Programs",
+	"news": "news",
 	"french_flag": "French flag",
 	"english_flag": "Union jack",
 	"solidarity": "Solidarity",
@@ -184,5 +185,56 @@
 	"programs_donation_title": "Make a donation today",
 	"programs_donation_description": "Your generosity helps us continue our programmes and build a better future for vulnerable people.",
 	"programs_donation_cta": "Make a donation",
-	"programs_donation_signature": "Every contribution matters"
+	"programs_donation_signature": "Every contribution matters",
+
+
+    "newsDetail_home": "Home",
+    "newsDetail_news": "News",
+    "newsDetail_gallery": "Gallery",
+    "newsDetail_relatedNews": "Related articles",
+    "newsDetail_readMore": "Read more",
+	"newsDetail_breadcrumb": "Breadcrumb",
+
+    "newsGallery_dialogLabel": "Image gallery",
+    "newsGallery_enlargeImage": "Enlarge image {number}",
+    "newsGallery_close": "Close gallery",
+    "newsGallery_previous": "Previous image",
+    "newsGallery_next": "Next image",
+
+    "newsPage_title": "All our news",
+    "newsPage_description": "Discover our latest initiatives, projects and events bringing FEMAPE Initiative to life in France and Africa.",
+    "newsPage_searchLabel": "Search news",
+    "newsPage_searchPlaceholder": "Search news...",
+    "newsPage_categoryLabel": "Category",
+    "newsPage_allCategories": "All categories",
+    "newsPage_sortLabel": "Sort news",
+    "newsPage_sortLatest": "Newest first",
+    "newsPage_sortOldest": "Oldest first",
+    "newsPage_filter": "Filter",
+    "newsPage_paginationLabel": "News pagination",
+    "newsPage_previousPage": "Previous page",
+    "newsPage_nextPage": "Next page",
+    "newsPage_goToPage": "Go to page {page}",
+    "newsPage_currentPage": "Page {page}, current page",
+
+    "footer_navigation": "Navigation",
+    "footer_home": "Home",
+    "footer_about": "About",
+    "footer_programs": "Our programs",
+    "footer_news": "News",
+    "footer_support": "Support us",
+    "footer_contact": "Contact",
+
+    "footer_followUs": "Follow us",
+
+    "footer_stayInformed": "Stay informed",
+    "footer_newsletterDescription": "Subscribe to our newsletter to keep up with our latest news.",
+    "footer_emailLabel": "Email address",
+    "footer_emailPlaceholder": "Your email address",
+    "footer_subscribe": "Subscribe",
+
+    "footer_copyright": "© {year} FEMAPE Initiative. All rights reserved.",
+    "footer_legalNavigation": "Legal links",
+    "footer_legalNotice": "Legal notice",
+    "footer_privacy": "Privacy policy"
 }

@@ -5,6 +5,7 @@
 	import * as m from '$lib/paraglide/messages.js';
 	import { House, Sprout, Users } from '@lucide/svelte';
 	import ResponsiveActionCard from './ResponsiveActionCard.svelte';
+	import { localizeHref } from '$lib/paraglide/runtime';
 
 	const actions = [
 		{
@@ -12,21 +13,30 @@
 			description: m.actions_assistance_description(),
 			image: assistanceImg,
 			icon: Users,
-			iconClass: 'bg-primary'
+			iconClass: 'bg-primary',
+			ctaLabel: m.programs_discover(),
+			ctaHref: '#assistance-personnes-vulnerables',
+			ctaClass: 'text-primary'
 		},
 		{
 			title: m.actions_reintegration_title(),
 			description: m.actions_reintegration_description(),
 			image: reinsertionImg,
 			icon: Sprout,
-			iconClass: 'bg-secondary'
+			iconClass: 'bg-secondary',
+			ctaLabel: m.programs_discover(),
+			ctaHref: '#reinsertion-sociale-professionnelle',
+			ctaClass: 'text-secondary'
 		},
 		{
 			title: m.actions_homeless_title(),
 			description: m.actions_homeless_description(),
 			image: sansAbriImg,
 			icon: House,
-			iconClass: 'bg-sky-400'
+			iconClass: 'bg-sky-400',
+			ctaLabel: m.programs_discover(),
+			ctaHref: '#aide-personnes-sans-abri',
+			ctaClass: 'text-sky-400'
 		}
 	];
 </script>
@@ -71,6 +81,9 @@
 					title={action.title}
 					description={action.description}
 					image={action.image}
+					ctaHref={localizeHref('/programs' + action.ctaHref)}
+					ctaLabel={action.ctaLabel}
+					ctaClass={action.ctaClass}
 				>
 					{#snippet icon()}
 						<span
