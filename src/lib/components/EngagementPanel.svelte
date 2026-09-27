@@ -21,7 +21,7 @@
 		resetForm: true
 	});
 
-	const { form: formData, errors, enhance, submitting } = form;
+	const { form: formData, errors, enhance, submitting, message } = form;
 
 	function translateError(error: string): string {
 		switch (error) {
@@ -45,6 +45,19 @@
 
 			default:
 				return error;
+		}
+	}
+
+	function translateMessage(message: string): string {
+		switch (message) {
+			case 'engagement_success':
+				return m.engagement_success();
+
+			case 'engagement_send_error':
+				return m.engagement_send_error();
+
+			default:
+				return message;
 		}
 	}
 </script>
@@ -138,6 +151,28 @@
 				</h3>
 
 				<form method="POST" action="?/engagement" use:enhance class="space-y-5">
+					<!--
+    Honeypot anti-spam.
+
+    Ce champ doit rester vide.
+    Il est placé hors écran plutôt qu'en display:none,
+    afin que les bots qui ignorent les champs invisibles
+    puissent néanmoins le détecter et le remplir.
+-->
+					<div
+						class="absolute top-auto left-[-9999px] h-px w-px overflow-hidden"
+						aria-hidden="true"
+					>
+						<label for="engagement-website"> Website </label>
+
+						<input
+							id="engagement-website"
+							name="website"
+							type="text"
+							tabindex="-1"
+							autocomplete="off"
+						/>
+					</div>
 					<div class="grid grid-cols-1 gap-x-6 gap-y-5 md:grid-cols-2">
 						<!-- COLONNE GAUCHE -->
 						<div class="flex flex-col gap-5">
@@ -354,7 +389,19 @@
 							{/if}
 						</div>
 					</Form.Field>
-
+					{#if $message}
+						<div
+							role={$message === 'engagement_success' ? 'status' : 'alert'}
+							class={[
+								'rounded-lg border px-4 py-3 text-sm',
+								$message === 'engagement_success'
+									? 'border-green-200 bg-green-50 text-green-800'
+									: 'border-red-200 bg-red-50 text-red-800'
+							]}
+						>
+							{translateMessage($message)}
+						</div>
+					{/if}
 					<!-- Bouton -->
 					<div class="flex justify-end">
 						<button

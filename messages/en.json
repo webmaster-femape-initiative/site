@@ -118,6 +118,9 @@
 	"engagement_error_message_too_long": "Your message cannot exceed 2,000 characters.",
 	"engagement_error_consent_required": "You must agree to the use of your data before submitting your request.",
 
+    "engagement_success": "Thank you! Your message has been sent successfully. We will get back to you as soon as possible.",
+    "engagement_send_error": "An error occurred while sending your message. Please try again in a few moments.",
+
 	"programs_hero_eyebrow": "OUR PROGRAMMES",
 	"programs_hero_title": "Discover Our Services",
 	"programs_hero_subtitle": "A commitment to improving lives",
