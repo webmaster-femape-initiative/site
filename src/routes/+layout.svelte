@@ -7,6 +7,7 @@
 	import favicon from '$lib/assets/favicon.svg';
 	import Navbar from '$lib/components/Navbar.svelte';
 	import Footer from '$lib/components/Footer.svelte';
+	import 'leaflet/dist/leaflet.css';
 
 	let { children } = $props();
 </script>

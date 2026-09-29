@@ -5,6 +5,7 @@
 	"about": "About",
 	"programs": "Programs",
 	"news": "news",
+	"contact": "contact",
 	"french_flag": "French flag",
 	"english_flag": "Union jack",
 	"solidarity": "Solidarity",
@@ -239,5 +240,72 @@
     "footer_copyright": "© {year} FEMAPE Initiative. All rights reserved.",
     "footer_legalNavigation": "Legal links",
     "footer_legalNotice": "Legal notice",
-    "footer_privacy": "Privacy policy"
+    "footer_privacy": "Privacy policy",
+	
+  	"contact_hero_title": "Contact us",
+	"contact_hero_together": "Together,",
+  	"contact_hero_slogan": "we make a difference",
+	"contact_hero_description": "Have a question, a suggestion, or want to get involved? Our team is here to listen.",
+
+  	"contact_form_title": "Write to us",
+  	"contact_form_description": "Use the form below to send us a message. We will get back to you as soon as possible.",
+
+  	"contact_form_last_name": "Last name",
+  	"contact_form_first_name": "First name",
+  	"contact_form_email": "Email address",
+
+  	"contact_form_subject": "Subject",
+  	"contact_form_subject_placeholder": "Select a subject",
+  	"contact_form_subject_information": "General information",
+  	"contact_form_subject_volunteering": "Volunteering",
+  	"contact_form_subject_donation": "Donation",
+  	"contact_form_subject_partnership": "Partnership",
+  	"contact_form_subject_press": "Press / media",
+  	"contact_form_subject_other": "Other",
+
+  	"contact_form_message": "Message",
+  	"contact_form_message_placeholder": "Your message...",
+
+  	"contact_form_submit": "Send message",
+  	"contact_form_sending": "Sending...",
+
+  	"contact_form_success": "Your message has been sent successfully. We will get back to you as soon as possible.",
+  	"contact_form_error": "An error occurred while sending your message. Please try again.",
+
+  	"contact_form_error_last_name_too_short": "Please enter a valid last name.",
+  	"contact_form_error_first_name_too_short": "Please enter a valid first name.",
+  	"contact_form_error_invalid_email": "Please enter a valid email address.",
+  	"contact_form_error_invalid_subject": "Please select a subject.",
+  	"contact_form_error_message_too_short": "Your message must contain at least 10 characters.",
+  	"contact_form_error_generic": "The value entered is not valid.",
+
+	"contact_details_title": "Other ways to contact us",
+
+	"contact_details_email_title": "By email",
+	"contact_details_email_value": "contact@femape.org",
+  	"contact_details_email_description": "We will reply within 48 hours.",
+
+   	"contact_details_phone_title": "By phone",
+  	"contact_details_phone_value": "+33 7 80 87 12 23",
+  	"contact_details_phone_link": "+33780871223",
+  	"contact_details_phone_description": "Monday to Friday, 9am to 6pm.",
+
+  	"contact_details_address_title": "Head Office",
+  	"contact_details_address_value": "FEMAPE Initiative",
+  	"contact_details_address_description": "2 Rue du Colonel Monteil, 75014 Paris, France",
+
+	"contact_details_hours_title": "Opening hours",
+  	"contact_details_hours_value": "By appointment",
+  	"contact_details_hours_description": "",
+
+	"contact_location_title": "Our location",
+ 	"contact_location_organization": "FEMAPE Initiative",
+  	"contact_location_address": "2 Rue du Colonel Monteil, 75014 Paris, France",
+  	"contact_location_map_label": "Map showing the location of FEMAPE Initiative",
+  	"contact_location_open_map": "View on OpenStreetMap",
+
+	"engagement_cta_title": "Together, we can make a difference",
+	"engagement_cta_description": "Every action counts. Your support enables us to help the most vulnerable people every day.",
+	"engagement_cta_donate": "Make a donation",
+  	"engagement_cta_get_involved": "Get involved"
 }

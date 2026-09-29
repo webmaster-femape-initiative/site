@@ -1,4 +1,5 @@
 <script lang="ts">
+	import EngagementCta from '$lib/components/EngagementCta.svelte';
 	import Hero from '$lib/components/Hero.svelte';
 	import NewsPanel from '$lib/components/NewsPanel.svelte';
 
@@ -13,3 +14,5 @@
 	filters={data.filters}
 	pagination={data.pagination}
 />
+
+<EngagementCta />

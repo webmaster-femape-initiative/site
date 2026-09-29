@@ -5,6 +5,7 @@
 	"home": "Accueil",
 	"programs": "Programmes",
 	"news": "Actualités",
+	"contact": "Contact",
 	"freanch_flag": "Drapeau français",
 	"english_flag": "Drapeau anglais",
 	"solidarity": "Solidaires",
@@ -237,5 +238,72 @@
     "footer_copyright": "© {year} FEMAPE Initiative. Tous droits réservés.",
     "footer_legalNavigation": "Liens légaux",
     "footer_legalNotice": "Mentions légales",
-    "footer_privacy": "Politique de confidentialité"
+    "footer_privacy": "Politique de confidentialité",
+
+  	"contact_hero_title": "Contactez-nous",
+	"contact_hero_together": "Ensemble,",
+  	"contact_hero_slogan": "faisons la différence",
+  	"contact_hero_description": "Une question, une suggestion, envie de vous engager ? Notre équipe est à votre écoute.",
+
+  	"contact_form_title": "Nous écrire",
+  	"contact_form_description": "Utilisez le formulaire ci-dessous pour nous envoyer un message. Nous vous répondrons dans les meilleurs délais.",
+
+  	"contact_form_last_name": "Nom",
+  	"contact_form_first_name": "Prénom",
+  	"contact_form_email": "Adresse e-mail",
+
+  	"contact_form_subject": "Objet",
+  	"contact_form_subject_placeholder": "Sélectionnez un sujet",
+  	"contact_form_subject_information": "Demande d'information",
+  	"contact_form_subject_volunteering": "Bénévolat",
+  	"contact_form_subject_donation": "Don",
+  	"contact_form_subject_partnership": "Partenariat",
+  	"contact_form_subject_press": "Presse / média",
+  	"contact_form_subject_other": "Autre",
+
+  	"contact_form_message": "Message",
+  	"contact_form_message_placeholder": "Votre message...",
+
+  	"contact_form_submit": "Envoyer le message",
+  	"contact_form_sending": "Envoi en cours...",
+
+  	"contact_form_success": "Votre message a bien été envoyé. Nous vous répondrons dans les meilleurs délais.",
+  	"contact_form_error": "Une erreur est survenue lors de l'envoi de votre message. Veuillez réessayer.",
+
+  	"contact_form_error_last_name_too_short": "Veuillez saisir un nom valide.",
+  	"contact_form_error_first_name_too_short": "Veuillez saisir un prénom valide.",
+  	"contact_form_error_invalid_email": "Veuillez saisir une adresse e-mail valide.",
+  	"contact_form_error_invalid_subject": "Veuillez sélectionner un objet.",
+  	"contact_form_error_message_too_short": "Votre message doit contenir au moins 10 caractères.",
+  	"contact_form_error_generic": "La valeur saisie n'est pas valide.",
+
+  	"contact_details_title": "Autres moyens de nous contacter",
+
+  	"contact_details_email_title": "Par e-mail",
+  	"contact_details_email_value": "contact@femape-initiative.org",
+  	"contact_details_email_description": "Nous vous répondons sous 48h.",
+
+  	"contact_details_phone_title": "Par téléphone",
+  	"contact_details_phone_value": "+33 7 80 87 12 23",
+  	"contact_details_phone_link": "+33780871223",
+  	"contact_details_phone_description": "Du lundi au vendredi de 9h à 18h.",
+
+  	"contact_details_address_title": "Siège social",
+  	"contact_details_address_value": "FEMAPE Initiative",
+  	"contact_details_address_description": "2 Rue du Colonel Monteil, 75014 Paris, France",
+
+	"contact_details_hours_title": "Horaires",
+  	"contact_details_hours_value": "Sur rendez-vous",
+  	"contact_details_hours_description": "",
+
+	"contact_location_title": "Notre localisation",
+  	"contact_location_organization": "FEMAPE Initiative",
+  	"contact_location_address": "2 Rue du Colonel Monteil, 75014 Paris, France",
+  	"contact_location_map_label": "Carte indiquant la localisation de FEMAPE Initiative",
+  	"contact_location_open_map": "Voir sur OpenStreetMap",
+
+	"engagement_cta_title": "Ensemble, faisons la différence",
+  	"engagement_cta_description": "Chaque geste compte. Votre soutien nous permet d'agir au quotidien auprès des personnes les plus vulnérables.",
+  	"engagement_cta_donate": "Faire un don",
+  	"engagement_cta_get_involved": "S'engager"
 }
