@@ -1,5 +1,15 @@
 import { relations } from 'drizzle-orm';
-import { categories, galleries, media, news, newsCategories, users } from './schema';
+import {
+	categories,
+	donationPayments,
+	donations,
+	donors,
+	galleries,
+	media,
+	news,
+	newsCategories,
+	users
+} from './schema';
 
 export const mediaRelations = relations(media, ({ one }) => ({
 	author: one(users, {
@@ -55,4 +65,26 @@ export const mediaRelation = relations(media, ({ many }) => ({
 
 export const authorNewsRelation = relations(users, ({ many }) => ({
 	news: many(news)
+}));
+
+export const donorsRelations = relations(donors, ({ many }) => ({
+	donations: many(donations)
+}));
+
+export const donationsRelations = relations(donations, ({ one, many }) => ({
+	donor: one(donors, {
+		fields: [donations.donorId],
+		references: [donors.id],
+		relationName: 'donor'
+	}),
+
+	payments: many(donationPayments)
+}));
+
+export const donationPaymentsRelations = relations(donationPayments, ({ one }) => ({
+	donation: one(donations, {
+		fields: [donationPayments.donationId],
+		references: [donations.id],
+		relationName: 'donation'
+	})
 }));

@@ -50,6 +50,7 @@
 			absolute inset-0
 			h-full w-full
 			object-cover
+			object-right
 			{objectPosition}
 		"
 	/>

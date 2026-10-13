@@ -6,6 +6,7 @@
 	"programs": "Programs",
 	"news": "news",
 	"contact": "contact",
+	"donations" : "Make a donation",
 	"french_flag": "French flag",
 	"english_flag": "Union jack",
 	"solidarity": "Solidarity",
@@ -307,5 +308,117 @@
 	"engagement_cta_title": "Together, we can make a difference",
 	"engagement_cta_description": "Every action counts. Your support enables us to help the most vulnerable people every day.",
 	"engagement_cta_donate": "Make a donation",
-  	"engagement_cta_get_involved": "Get involved"
+  	"engagement_cta_get_involved": "Get involved",
+
+	"donation_hero_eyebrow": "Make a donation",
+	"donation_hero_title": "Support today for lasting impact",
+	"donation_hero_subtitle": "Every donation makes a difference",
+	"donation_hero_description": "Your generosity enables us to take concrete action for the most vulnerable people, here in the Île-de-France region and in West Africa.",
+	"donation_hero_image_alt": "A gesture of support and solidarity",
+
+	"donation_form_title": "My donation",
+	"donation_form_intro": "Choose how you would like to support us.",
+
+	"donation_form_type_legend": "Donation type",
+	"donation_form_type_one_off": "One-time donation",
+	"donation_form_type_one_off_description": "I want to make a one-time donation",
+	"donation_form_type_recurring": "Recurring donation",
+	"donation_form_type_recurring_description": "I want to provide regular support",
+
+	"donation_form_amount": "Amount",
+	"donation_form_monthly_amount": "Monthly amount",
+	"donation_form_custom_amount": "Other amount",
+
+	"donation_form_frequency": "Frequency",
+	"donation_form_frequency_monthly": "Every month",
+
+	"donation_form_duration": "Duration",
+	"donation_form_duration_unlimited": "No end date (until cancelled)",
+	"donation_form_duration_unlimited_description": "Your support continues until you decide to stop it.",
+	"donation_form_duration_fixed": "Fixed number of payments",
+	"donation_form_duration_fixed_description": "Choose the total number of monthly payments.",
+	"donation_form_payment_count": "Number of payments",
+
+	"donation_form_details_title": "My details",
+	"donation_form_details_description": "This information allows us to process your donation and identify you as a donor.",
+
+	"donation_form_first_name": "First name",
+	"donation_form_last_name": "Last name",
+	"donation_form_email": "Email address",
+	"donation_form_address": "Address",
+	"donation_form_postal_code": "Postcode",
+	"donation_form_city": "City",
+	"donation_form_country": "Country",
+
+	"donation_form_country_france": "France",
+	"donation_form_country_belgium": "Belgium",
+	"donation_form_country_luxembourg": "Luxembourg",
+	"donation_form_country_switzerland": "Switzerland",
+	"donation_form_country_united_kingdom": "United Kingdom",
+
+	"donation_form_mollie_one_off": "You will be redirected to Mollie's secure payment platform to complete your donation.",
+	
+	"donation_form_mollie_recurring": "You will be redirected to Mollie to make your first payment and authorise subsequent recurring payments.",
+
+	"donation_form_submit_one_off": "Donate {amount} €",
+	"donation_form_submit_recurring": "Donate {amount} € monthly",
+
+	"donation_form_secure_payment": "Payment is processed securely by Mollie.",
+
+	"donation_form_minimum_amount": "The minimum donation amount is €2.",
+
+	"donation_form_frequency_monthly_description": "Your donation will be renewed every month.",
+
+	"donation_form_frequency_quarterly": "Every quarter",
+	"donation_form_frequency_quarterly_description": "Your donation will be renewed every three months.",
+
+	"donation_form_submit_monthly": "Donate {amount} € monthly",
+	"donation_form_submit_quarterly": "Donate {amount} € quarterly",
+
+	"donation_form_payment_method": "Payment method",
+
+	"donation_form_payment_card": "Bank card",
+	"donation_form_payment_card_description": "Pay securely by card.",
+
+	"donation_form_payment_sepa": "SEPA Direct Debit",
+	"donation_form_payment_sepa_description": "Authorise the payment from your bank account.",
+
+	"donation_error_amount_invalid": "Please enter a valid amount.",
+	"donation_error_amount_too_low": "The minimum donation amount is €2.",
+	"donation_error_amount_too_high": "The amount entered is too high.",
+
+	"donation_error_frequency_required": "Please select a frequency.",
+	"donation_error_duration_required": "Please select a duration.",
+
+	"donation_error_payment_count_invalid": "Please enter a valid number of payments.",
+	"donation_error_payment_count_required": "Please enter the number of payments.",
+	"donation_error_payment_count_too_low": "A recurring donation must include at least two payments.",
+
+	"donation_error_first_name_too_short": "Please enter your first name.",
+	"donation_error_first_name_too_long": "The first name entered is too long.",
+
+	"donation_error_last_name_too_short": "Please enter your last name.",
+	"donation_error_last_name_too_long": "The last name entered is too long.",
+
+	"donation_error_email_invalid": "Please enter a valid email address.",
+	"donation_error_email_too_long": "The email address entered is too long.",
+
+	"donation_error_address_too_short": "Please enter a valid address.",
+	"donation_error_address_too_long": "The address entered is too long.",
+
+	"donation_error_postal_code_invalid": "Please enter a valid postcode.",
+
+	"donation_error_city_too_short": "Please enter a valid city.",
+	"donation_error_city_too_long": "The city name entered is too long.",
+
+	"donation_error_country_invalid": "Please select a valid country.",
+
+	"donation_error_generic": "The value entered is not valid.",
+
+	"donation_form_submitting": "Redirecting to payment…",
+	"donation_form_recurring_amount": "Recurring donation amount",
+
+	"donation_error_submission_rejected": "The request could not be processed. Please try again.",
+	"donation_form_validation_success": "The form is valid. The payment can now be initiated."
+
 }

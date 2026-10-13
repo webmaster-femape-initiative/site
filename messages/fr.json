@@ -6,6 +6,7 @@
 	"programs": "Programmes",
 	"news": "Actualités",
 	"contact": "Contact",
+	"donations" : "Faire un don",
 	"freanch_flag": "Drapeau français",
 	"english_flag": "Drapeau anglais",
 	"solidarity": "Solidaires",
@@ -305,5 +306,116 @@
 	"engagement_cta_title": "Ensemble, faisons la différence",
   	"engagement_cta_description": "Chaque geste compte. Votre soutien nous permet d'agir au quotidien auprès des personnes les plus vulnérables.",
   	"engagement_cta_donate": "Faire un don",
-  	"engagement_cta_get_involved": "S'engager"
+  	"engagement_cta_get_involved": "S'engager",
+
+	"donation_hero_eyebrow": "Faire un don",
+	"donation_hero_title": "Soutenir aujourd’hui pour un impact durable",
+	"donation_hero_subtitle": "Chaque don compte",
+	"donation_hero_description": "Votre générosité nous permet d’agir concrètement auprès des personnes les plus vulnérables, ici en Île-de-France et en Afrique de l’Ouest.",
+	"donation_hero_image_alt": "Un geste d’entraide et de solidarité",
+
+	"donation_form_title": "Mon don",
+	"donation_form_intro": "Choisissez la manière dont vous souhaitez nous soutenir.",
+
+	"donation_form_type_legend": "Type de don",
+	"donation_form_type_one_off": "Don unique",
+	"donation_form_type_one_off_description": "Je fais un don ponctuel",
+	"donation_form_type_recurring": "Don récurrent",
+	"donation_form_type_recurring_description": "Je soutiens régulièrement",
+
+	"donation_form_amount": "Montant",
+	"donation_form_monthly_amount": "Montant mensuel",
+	"donation_form_custom_amount": "Autre montant",
+
+	"donation_form_frequency": "Fréquence",
+	"donation_form_frequency_monthly": "Chaque mois",
+	"donation_form_frequency_monthly_description": "Votre don sera renouvelé chaque mois.",
+
+	"donation_form_duration": "Durée",
+	"donation_form_duration_unlimited": "Sans limite (jusqu’à annulation)",
+	"donation_form_duration_unlimited_description": "Votre soutien se poursuit jusqu’à ce que vous décidiez de l’arrêter.",
+	"donation_form_duration_fixed": "Nombre de paiements défini",
+	"donation_form_duration_fixed_description": "Choisissez le nombre total de paiements mensuels.",
+	"donation_form_payment_count": "Nombre de paiements",
+
+	"donation_form_details_title": "Mes coordonnées",
+	"donation_form_details_description": "Ces informations nous permettent de traiter votre don et de vous identifier en tant que donateur.",
+
+	"donation_form_first_name": "Prénom",
+	"donation_form_last_name": "Nom",
+	"donation_form_email": "Adresse e-mail",
+	"donation_form_address": "Adresse",
+	"donation_form_postal_code": "Code postal",
+	"donation_form_city": "Ville",
+	"donation_form_country": "Pays",
+
+	"donation_form_country_france": "France",
+	"donation_form_country_belgium": "Belgique",
+	"donation_form_country_luxembourg": "Luxembourg",
+	"donation_form_country_switzerland": "Suisse",
+	"donation_form_country_united_kingdom": "Royaume-Uni",
+
+	"donation_form_mollie_one_off": "Vous serez redirigé vers la plateforme de paiement sécurisée Mollie pour finaliser votre don.",
+	
+	"donation_form_mollie_recurring": "Vous serez redirigé vers Mollie pour effectuer votre premier paiement et autoriser les paiements récurrents suivants.",
+
+	"donation_form_submit_one_off": "Faire un don de {amount} €",
+	"donation_form_submit_recurring": "Faire un don mensuel de {amount} €",
+
+	"donation_form_secure_payment": "Le paiement est réalisé de manière sécurisée par Mollie.",
+
+	"donation_form_minimum_amount": "Le montant minimum d’un don est de 2 €.",
+
+
+	"donation_form_frequency_quarterly": "Chaque trimestre",
+	"donation_form_frequency_quarterly_description": "Votre don sera renouvelé tous les trois mois.",
+
+	"donation_form_submit_monthly": "Faire un don mensuel de {amount} €",
+	"donation_form_submit_quarterly": "Faire un don trimestriel de {amount} €",
+
+	"donation_form_payment_method": "Moyen de paiement",
+
+	"donation_form_payment_card": "Carte bancaire",
+	"donation_form_payment_card_description": "Payez de manière sécurisée par carte.",
+
+	"donation_form_payment_sepa": "Prélèvement SEPA",
+	"donation_form_payment_sepa_description": "Autorisez le prélèvement sur votre compte bancaire.",
+
+	"donation_error_amount_invalid": "Veuillez saisir un montant valide.",
+	"donation_error_amount_too_low": "Le montant minimum d’un don est de 2 €.",
+	"donation_error_amount_too_high": "Le montant saisi est trop élevé.",
+
+	"donation_error_frequency_required": "Veuillez choisir une fréquence.",
+	"donation_error_duration_required": "Veuillez choisir une durée.",
+
+	"donation_error_payment_count_invalid": "Veuillez saisir un nombre de paiements valide.",
+	"donation_error_payment_count_required": "Veuillez indiquer le nombre de paiements.",
+	"donation_error_payment_count_too_low": "Un don récurrent doit comporter au moins deux paiements.",
+
+	"donation_error_first_name_too_short": "Veuillez saisir votre prénom.",
+	"donation_error_first_name_too_long": "Le prénom saisi est trop long.",
+
+	"donation_error_last_name_too_short": "Veuillez saisir votre nom.",
+	"donation_error_last_name_too_long": "Le nom saisi est trop long.",
+
+	"donation_error_email_invalid": "Veuillez saisir une adresse e-mail valide.",
+	"donation_error_email_too_long": "L’adresse e-mail saisie est trop longue.",
+
+	"donation_error_address_too_short": "Veuillez saisir une adresse valide.",
+	"donation_error_address_too_long": "L’adresse saisie est trop longue.",
+
+	"donation_error_postal_code_invalid": "Veuillez saisir un code postal valide.",
+
+	"donation_error_city_too_short": "Veuillez saisir une ville valide.",
+	"donation_error_city_too_long": "Le nom de la ville est trop long.",
+
+	"donation_error_country_invalid": "Veuillez sélectionner un pays valide.",
+
+	"donation_error_generic": "La valeur saisie n’est pas valide.",
+
+	"donation_form_submitting": "Redirection vers le paiement…",
+	"donation_form_recurring_amount": "Montant du don récurrent",
+
+	"donation_error_submission_rejected": "La demande n’a pas pu être traitée. Veuillez réessayer.",
+	"donation_form_validation_success": "Le formulaire est valide. Le paiement pourra être initialisé."
 }
