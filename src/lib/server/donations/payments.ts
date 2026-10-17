@@ -388,3 +388,28 @@ export async function markDonationPaymentRefunded(
 
 	return payment;
 }
+
+/**
+ * Récupère le premier paiement encaissé d'un don.
+ *
+ * La date paidAt servira de référence pour calculer
+ * la première échéance de la souscription Mollie.
+ */
+export async function getFirstPaidDonationPayment(donationId: string) {
+	const [payment] = await db
+		.select({
+			id: donationPayments.id,
+			paidAt: donationPayments.paidAt
+		})
+		.from(donationPayments)
+		.where(
+			and(
+				eq(donationPayments.donationId, donationId),
+				eq(donationPayments.sequenceNumber, 1),
+				eq(donationPayments.status, 'paid')
+			)
+		)
+		.limit(1);
+
+	return payment ?? null;
+}

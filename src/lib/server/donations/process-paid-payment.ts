@@ -7,7 +7,10 @@ import {
 
 import { getDonorById } from '$lib/server/donations/donors';
 
-import { countPaidDonationPayments } from '$lib/server/donations/payments';
+import {
+	countPaidDonationPayments,
+	getFirstPaidDonationPayment
+} from '$lib/server/donations/payments';
 
 import { getUsableMollieCustomerMandate } from '$lib/server/mollie/customers';
 
@@ -128,6 +131,16 @@ async function processFirstRecurringPayment(
 	}
 
 	// ==========================================================
+	// 3 bis. Récupérer la date du premier paiement
+	// ==========================================================
+
+	const firstPayment = await getFirstPaidDonationPayment(donation.id);
+
+	if (!firstPayment?.paidAt) {
+		throw new Error(`First paid payment or payment date not found for donation ${donation.id}`);
+	}
+
+	// ==========================================================
 	// 4. Vérifier le mandat Mollie
 	// ==========================================================
 
@@ -147,7 +160,8 @@ async function processFirstRecurringPayment(
 		amount: donation.amount,
 		frequency: donation.frequency,
 		paymentCount: donation.duration === 'fixed' ? donation.paymentCount : null,
-		mandateId: mandate.id
+		mandateId: mandate.id,
+		firstPaymentDate: new Date(firstPayment.paidAt)
 	});
 
 	await activateRecurringDonation(donation.id, subscription.id);
