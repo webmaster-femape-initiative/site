@@ -147,7 +147,9 @@ export async function setDonationPaymentMollieData(
  * RECHERCHE PAR ID MOLLIE
  * ============================================================== */
 
-export async function getDonationPaymentByMollieId(molliePaymentId: string) {
+export async function getDonationPaymentByMollieId(
+	molliePaymentId: string
+): Promise<typeof donationPayments.$inferSelect | null> {
 	const [payment] = await db
 		.select()
 		.from(donationPayments)
@@ -395,7 +397,9 @@ export async function markDonationPaymentRefunded(
  * La date paidAt servira de référence pour calculer
  * la première échéance de la souscription Mollie.
  */
-export async function getFirstPaidDonationPayment(donationId: string) {
+export async function getFirstPaidDonationPayment(
+	donationId: string
+): Promise<{ id: string; paidAt: Date | null } | null> {
 	const [payment] = await db
 		.select({
 			id: donationPayments.id,

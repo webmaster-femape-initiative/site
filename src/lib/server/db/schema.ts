@@ -64,6 +64,19 @@ export const donationPaymentRefundStatusEnum = pgEnum('donation_payment_refund_s
 	'canceled'
 ]);
 
+export const mollieSubscriptionStatusEnum = pgEnum('mollie_subscription_status_enum', [
+	'pending',
+	'active',
+	'suspended',
+	'canceled',
+	'completed'
+]);
+
+export const donationSubscriptionCreationStatusEnum = pgEnum(
+	'donation_subscription_creation_status',
+	['idle', 'reserved', 'reconciliation_required', 'activated']
+);
+
 export const donorNumberSequence = pgSequence('donor_number_seq', {
 	startWith: 1,
 	increment: 1
@@ -278,6 +291,28 @@ export const donations = pgTable(
 			length: 50
 		}),
 
+		mollieSubscriptionStatus: mollieSubscriptionStatusEnum('mollie_subscription_status'),
+
+		mollieSubscriptionSyncedAt: timestamp('mollie_subscription_synced_at', { withTimezone: true }),
+
+		subscriptionCreationStatus: donationSubscriptionCreationStatusEnum(
+			'subscription_creation_status'
+		)
+			.notNull()
+			.default('idle'),
+
+		subscriptionCreationToken: uuid('subscription_creation_token'),
+
+		subscriptionCreationReservedAt: timestamp('subscription_creation_reserved_at', {
+			withTimezone: true
+		}),
+
+		subscriptionCreationUpdatedAt: timestamp('subscription_creation_updated_at', {
+			withTimezone: true
+		})
+			.notNull()
+			.defaultNow(),
+
 		/* Snapshot lors de la souscription */
 
 		donorFirstName: varchar('donor_first_name', { length: 100 }).notNull(),
@@ -362,6 +397,40 @@ export const donations = pgTable(
 					AND ${table.paymentCount} >= 2
 				)
 			`
+		),
+		index('donations_subscription_creation_status_idx').on(table.subscriptionCreationStatus),
+
+		check(
+			'donations_subscription_reservation_check',
+			sql`(
+        (
+            ${table.subscriptionCreationStatus} = 'reserved'
+            AND ${table.subscriptionCreationToken} IS NOT NULL
+            AND ${table.subscriptionCreationReservedAt} IS NOT NULL
+        )
+        OR
+        (
+            ${table.subscriptionCreationStatus} <> 'reserved'
+            AND ${table.subscriptionCreationToken} IS NULL
+            AND ${table.subscriptionCreationReservedAt} IS NULL
+        )
+    )`
+		),
+
+		check(
+			'donations_subscription_activated_check',
+			sql`(
+        ${table.subscriptionCreationStatus} <> 'activated'
+        OR ${table.mollieSubscriptionId} IS NOT NULL
+    )`
+		),
+
+		check(
+			'donations_mollie_subscription_status_check',
+			sql`(
+        ${table.mollieSubscriptionStatus} IS NULL
+        OR ${table.mollieSubscriptionId} IS NOT NULL
+    )`
 		)
 	]
 );
@@ -775,7 +844,7 @@ export const donationReceipts = pgTable(
 
 		index('donation_receipts_donation_date_idx').on(table.donationDate),
 
-		check('donation_receipts_amount_check', sql`${table.amount} >= 200`),
+		check('donation_receipts_amount_check', sql`${table.amount} >= 1`),
 
 		check('donation_receipts_donor_country_check', sql`char_length(${table.donorCountry}) = 2`),
 

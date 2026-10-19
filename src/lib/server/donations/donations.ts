@@ -1,7 +1,7 @@
 import { db } from '$lib/server/db';
 import { donations } from '$lib/server/db/schema';
 
-import { eq } from 'drizzle-orm';
+import { eq, and } from 'drizzle-orm';
 
 import type { CreateDonationData } from './types';
 
@@ -47,24 +47,6 @@ export async function getDonationById(donationId: string) {
 	return donation ?? null;
 }
 
-export async function activateRecurringDonation(donationId: string, mollieSubscriptionId: string) {
-	const [donation] = await db
-		.update(donations)
-		.set({
-			status: 'active',
-			mollieSubscriptionId,
-			updatedAt: new Date()
-		})
-		.where(eq(donations.id, donationId))
-		.returning();
-
-	if (!donation) {
-		throw new Error('Unable to activate recurring donation');
-	}
-
-	return donation;
-}
-
 export async function completeOneOffDonation(donationId: string) {
 	const now = new Date();
 
@@ -85,7 +67,9 @@ export async function completeOneOffDonation(donationId: string) {
 	return donation;
 }
 
-export async function getDonationByMollieSubscriptionId(mollieSubscriptionId: string) {
+export async function getDonationByMollieSubscriptionId(
+	mollieSubscriptionId: string
+): Promise<typeof donations.$inferSelect | null> {
 	const [donation] = await db
 		.select()
 		.from(donations)
@@ -105,7 +89,13 @@ export async function completeRecurringDonation(donationId: string) {
 			completedAt: now,
 			updatedAt: now
 		})
-		.where(eq(donations.id, donationId))
+		.where(
+			and(
+				eq(donations.id, donationId),
+				eq(donations.type, 'recurring'),
+				eq(donations.status, 'active')
+			)
+		)
 		.returning();
 
 	if (!donation) {

@@ -13,9 +13,8 @@
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write .",
 		"db:push": "drizzle-kit push",
-		"db:generate": "drizzle-kit generate",
-		"db:migrate": "drizzle-kit migrate",
-		"db:studio": "drizzle-kit studio"
+		"test": "vitest run",
+		"test:watch": "vitest"
 	},
 	"devDependencies": {
 		"@eslint/js": "^10.0.1",
@@ -29,6 +28,7 @@
 		"@types/leaflet": "^1.9.22",
 		"@types/node": "^22",
 		"daisyui": "^5.7.32",
+		"dotenv": "^18.0.8",
 		"drizzle-kit": "^0.31.10",
 		"drizzle-orm": "^0.45.2",
 		"eslint": "^10.4.1",
@@ -44,7 +44,8 @@
 		"tailwindcss": "^4.3.0",
 		"typescript": "^6.0.3",
 		"typescript-eslint": "^8.60.1",
-		"vite": "^8.0.16"
+		"vite": "^8.0.16",
+		"vitest": "^5.0.5"
 	},
 	"dependencies": {
 		"@icons-pack/svelte-simple-icons": "^6.5.0",

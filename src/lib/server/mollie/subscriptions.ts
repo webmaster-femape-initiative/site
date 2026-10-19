@@ -97,6 +97,10 @@ export async function createMollieSubscription(data: CreateMollieSubscriptionDat
 
 			description: `Don récurrent FEMAPE ${data.donationId}`,
 
+			metadata: {
+				donationId: data.donationId
+			},
+
 			webhookUrl,
 
 			...(remainingPayments != null
@@ -111,5 +115,81 @@ export async function createMollieSubscription(data: CreateMollieSubscriptionDat
 					}
 				: {})
 		}
+	});
+}
+
+export type FindExistingMollieSubscriptionData = {
+	customerId: string;
+	donationId: string;
+};
+
+type ListResult = Awaited<ReturnType<typeof mollie.subscriptions.list>>;
+
+type Page = ListResult extends AsyncIterable<infer T> ? T : never;
+
+type Subscription = NonNullable<Page['result']['embedded']['subscriptions']>[number];
+
+export async function findExistingMollieSubscription(
+	data: FindExistingMollieSubscriptionData
+): Promise<Subscription | null> {
+	const result = await mollie.subscriptions.list({
+		customerId: data.customerId,
+		limit: 250
+	});
+
+	const matches: Subscription[] = [];
+
+	const expectedDescription = `Don récurrent FEMAPE ${data.donationId}`;
+
+	for await (const page of result) {
+		for (const subscription of page.result.embedded.subscriptions ?? []) {
+			const metadata = subscription.metadata;
+
+			const metadataDonationId =
+				metadata !== null &&
+				typeof metadata === 'object' &&
+				!Array.isArray(metadata) &&
+				'donationId' in metadata
+					? metadata.donationId
+					: undefined;
+
+			const isMatch =
+				metadataDonationId === data.donationId ||
+				(metadataDonationId === undefined && subscription.description === expectedDescription);
+
+			if (isMatch) {
+				matches.push(subscription);
+			}
+		}
+	}
+	if (matches.length > 1) {
+		throw new Error(`Multiple Mollie subscriptions found for donation ${data.donationId}`);
+	}
+
+	return matches[0] ?? null;
+}
+
+/**
+ * Récupère un abonnement Mollie à partir de son identifiant
+ * et de l'identifiant du client auquel il appartient.
+ */
+
+export type GetMollieSubscriptionData = {
+	customerId: string;
+	subscriptionId: string;
+};
+
+export async function getMollieSubscription(data: GetMollieSubscriptionData) {
+	if (!data.customerId.trim()) {
+		throw new Error('Mollie customer ID is required');
+	}
+
+	if (!data.subscriptionId.trim()) {
+		throw new Error('Mollie subscription ID is required');
+	}
+
+	return mollie.subscriptions.get({
+		customerId: data.customerId,
+		subscriptionId: data.subscriptionId
 	});
 }

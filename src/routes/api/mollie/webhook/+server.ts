@@ -23,6 +23,8 @@ import {
 	getMolliePaymentChargebacks
 } from '$lib/server/mollie/payments';
 
+import { syncMollieSubscription } from '$lib/server/donations/sync-subscription-status';
+
 /* ==============================================================
  * STATUT MOLLIE -> STATUT MÉTIER
  * ============================================================== */
@@ -88,6 +90,32 @@ function getMolliePaymentMethod(method: unknown): string | null {
 	}
 
 	return method.trim();
+}
+
+async function synchronizePaymentSubscription(
+	subscriptionId: string | null | undefined
+): Promise<boolean> {
+	if (!subscriptionId) {
+		return true;
+	}
+
+	try {
+		const result = await syncMollieSubscription(subscriptionId);
+
+		console.info('Mollie subscription synchronized:', {
+			subscriptionId,
+			result
+		});
+
+		return true;
+	} catch (error) {
+		console.error('Unable to synchronize Mollie subscription:', {
+			subscriptionId,
+			error
+		});
+
+		return false;
+	}
 }
 
 /* ==============================================================
@@ -318,7 +346,11 @@ export const POST: RequestHandler = async ({ request }) => {
 	// Aucun traitement financier ou fiscal pour les
 	// paiements qui ne sont pas encore encaissés.
 	if (effectiveStatus !== 'paid') {
-		return new Response(null, { status: 200 });
+		const synchronized = await synchronizePaymentSubscription(molliePayment.subscriptionId);
+
+		return new Response(null, {
+			status: synchronized ? 200 : 503
+		});
 	}
 
 	// ==========================================================
@@ -430,5 +462,9 @@ export const POST: RequestHandler = async ({ request }) => {
 	// 11. WEBHOOK TRAITÉ
 	// ==========================================================
 
-	return new Response(null, { status: 200 });
+	const synchronized = await synchronizePaymentSubscription(molliePayment.subscriptionId);
+
+	return new Response(null, {
+		status: synchronized ? 200 : 503
+	});
 };
