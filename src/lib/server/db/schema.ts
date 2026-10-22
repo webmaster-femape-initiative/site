@@ -275,6 +275,9 @@ export const donations = pgTable(
 
 		type: donationTypeEnum('type').notNull(),
 
+		/**
+		 * Montant d'une échéance, en centimes.
+		 */
 		amount: integer('amount').notNull(),
 
 		paymentMethod: donationPaymentMethodEnum('payment_method').notNull(),
@@ -293,7 +296,15 @@ export const donations = pgTable(
 
 		mollieSubscriptionStatus: mollieSubscriptionStatusEnum('mollie_subscription_status'),
 
-		mollieSubscriptionSyncedAt: timestamp('mollie_subscription_synced_at', { withTimezone: true }),
+		mollieSubscriptionSyncedAt: timestamp('mollie_subscription_synced_at', {
+			withTimezone: true
+		}),
+
+		mollieSubscriptionSyncGeneration: bigint('mollie_subscription_sync_generation', {
+			mode: 'number'
+		})
+			.notNull()
+			.default(0),
 
 		subscriptionCreationStatus: donationSubscriptionCreationStatusEnum(
 			'subscription_creation_status'
@@ -431,6 +442,10 @@ export const donations = pgTable(
         ${table.mollieSubscriptionStatus} IS NULL
         OR ${table.mollieSubscriptionId} IS NOT NULL
     )`
+		),
+		check(
+			'donations_mollie_subscription_sync_generation_check',
+			sql`${table.mollieSubscriptionSyncGeneration} >= 0`
 		)
 	]
 );
@@ -985,5 +1000,75 @@ export const donationPaymentChargebacks = pgTable(
 		index('donation_payment_chargebacks_status_idx').on(table.status),
 
 		check('donation_payment_chargebacks_amount_check', sql`${table.amount} > 0`)
+	]
+);
+
+export const scheduledJobExecutionStatusEnum = pgEnum('scheduled_job_execution_status', [
+	'running',
+	'completed',
+	'partial',
+	'failed',
+	'interrupted'
+]);
+
+export const scheduledJobExecutions = pgTable(
+	'scheduled_job_executions',
+	{
+		id: uuid('id').defaultRandom().primaryKey(),
+
+		jobId: uuid('job_id').notNull(),
+
+		jobName: varchar('job_name', { length: 150 }).notNull(),
+
+		// Identification de la tentative pg-boss
+		attemptNumber: integer('attempt_number'),
+
+		pgbossStartedAt: timestamp('pgboss_started_at', {
+			withTimezone: true
+		}),
+
+		status: scheduledJobExecutionStatusEnum('status').notNull().default('running'),
+
+		startedAt: timestamp('started_at', {
+			withTimezone: true
+		})
+			.notNull()
+			.defaultNow(),
+
+		completedAt: timestamp('completed_at', {
+			withTimezone: true
+		}),
+
+		processedCount: integer('processed_count').notNull().default(0),
+		successCount: integer('success_count').notNull().default(0),
+		failureCount: integer('failure_count').notNull().default(0),
+
+		message: text('message'),
+		errorDetails: text('error_details')
+	},
+	(table) => [
+		index('scheduled_job_executions_job_id_idx').on(table.jobId),
+
+		index('scheduled_job_executions_name_started_idx').on(table.jobName, table.startedAt),
+
+		index('scheduled_job_executions_status_idx').on(table.status),
+
+		check(
+			'scheduled_job_executions_counts_check',
+			sql`
+                ${table.processedCount} >= 0
+                AND ${table.successCount} >= 0
+                AND ${table.failureCount} >= 0
+                AND ${table.successCount} + ${table.failureCount}
+                    <= ${table.processedCount}
+            `
+		),
+		check(
+			'scheduled_job_executions_attempt_check',
+			sql`
+                ${table.attemptNumber} IS NULL
+                OR ${table.attemptNumber} >= 0
+            `
+		)
 	]
 );

@@ -3,18 +3,30 @@ import { eq } from 'drizzle-orm';
 import { db } from '$lib/server/db';
 import { donors, donations, donationPayments } from '$lib/server/db/schema';
 
+export type RecurringDonationFixtureOptions = {
+	withMollieSubscription?: boolean;
+};
+
 export type RecurringDonationFixture = {
 	donorId: string;
 	donationId: string;
 	paymentId: string;
 	molliePaymentId: string;
 	amount: number;
+	subscriptionId?: string;
+	customerId?: string;
 	cleanup: () => Promise<void>;
 };
 
-export async function createRecurringDonationFixture(): Promise<RecurringDonationFixture> {
+export async function createRecurringDonationFixture(
+	options: RecurringDonationFixtureOptions = {}
+): Promise<RecurringDonationFixture> {
 	const amount = 2500;
 	const suffix = crypto.randomUUID();
+
+	const subscriptionId = options.withMollieSubscription ? `sub_${suffix}` : undefined;
+
+	const customerId = options.withMollieSubscription ? `cst_${suffix}` : undefined;
 
 	const identity = {
 		firstName: 'Test',
@@ -28,7 +40,13 @@ export async function createRecurringDonationFixture(): Promise<RecurringDonatio
 
 	const molliePaymentId = `tr_test_${suffix}`;
 
-	const [donor] = await db.insert(donors).values(identity).returning({ id: donors.id });
+	const [donor] = await db
+		.insert(donors)
+		.values({
+			...identity,
+			...(customerId ? { mollieCustomerId: customerId } : {})
+		})
+		.returning({ id: donors.id });
 
 	let donationId: string | undefined;
 
@@ -50,7 +68,14 @@ export async function createRecurringDonationFixture(): Promise<RecurringDonatio
 				donorAddress: identity.address,
 				donorPostalCode: identity.postalCode,
 				donorCity: identity.city,
-				donorCountry: identity.country
+				donorCountry: identity.country,
+				...(subscriptionId
+					? {
+							mollieSubscriptionId: subscriptionId,
+							mollieSubscriptionStatus: 'pending' as const,
+							subscriptionCreationStatus: 'activated' as const
+						}
+					: {})
 			})
 			.returning({ id: donations.id });
 
@@ -83,6 +108,8 @@ export async function createRecurringDonationFixture(): Promise<RecurringDonatio
 			paymentId: payment.id,
 			molliePaymentId,
 			amount,
+			subscriptionId,
+			customerId,
 
 			async cleanup() {
 				await db.transaction(async (tx) => {

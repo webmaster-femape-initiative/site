@@ -14,7 +14,8 @@
 		"format": "prettier --write .",
 		"db:push": "drizzle-kit push",
 		"test": "vitest run",
-		"test:watch": "vitest"
+		"test:watch": "vitest",
+		"worker:dev": "node --env-file=.env --import tsx workers/main.ts"
 	},
 	"devDependencies": {
 		"@eslint/js": "^10.0.1",
@@ -42,6 +43,7 @@
 		"svelte": "^5.56.1",
 		"svelte-check": "^4.6.0",
 		"tailwindcss": "^4.3.0",
+		"tsx": "^4.23.15",
 		"typescript": "^6.0.3",
 		"typescript-eslint": "^8.60.1",
 		"vite": "^8.0.16",
@@ -53,6 +55,7 @@
 		"formsnap": "^2.0.1",
 		"leaflet": "^1.9.4",
 		"mollie-api-typescript": "^1.12.37",
+		"pg-boss": "^12.38.0",
 		"resend": "^6.30.0",
 		"sveltekit-superforms": "^2.30.2",
 		"zod": "^4.6.5"

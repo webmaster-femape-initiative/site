@@ -174,22 +174,10 @@ export async function findExistingMollieSubscription(
  * et de l'identifiant du client auquel il appartient.
  */
 
-export type GetMollieSubscriptionData = {
-	customerId: string;
-	subscriptionId: string;
-};
+import { createGetMollieSubscription } from './get-subscription.ts';
 
-export async function getMollieSubscription(data: GetMollieSubscriptionData) {
-	if (!data.customerId.trim()) {
-		throw new Error('Mollie customer ID is required');
-	}
+// L'import existant de mollie est conservé.
 
-	if (!data.subscriptionId.trim()) {
-		throw new Error('Mollie subscription ID is required');
-	}
+export const getMollieSubscription = createGetMollieSubscription(mollie);
 
-	return mollie.subscriptions.get({
-		customerId: data.customerId,
-		subscriptionId: data.subscriptionId
-	});
-}
+export type { GetMollieSubscriptionData } from './get-subscription.ts';

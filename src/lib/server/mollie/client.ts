@@ -1,13 +1,4 @@
-import { Client } from 'mollie-api-typescript';
-
 import { env } from '$env/dynamic/private';
+import { createMollieClient } from './client-factory.ts';
 
-if (!env.MOLLIE_API_KEY) {
-	throw new Error('MOLLIE_API_KEY is not set');
-}
-
-export const mollie = new Client({
-	security: {
-		apiKey: env.MOLLIE_API_KEY
-	}
-});
+export const mollie = createMollieClient(env.MOLLIE_API_KEY ?? '');
